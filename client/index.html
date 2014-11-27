@@ -25,7 +25,10 @@
     <!-- Nivo Lightbox CSS -->
     <link href="css/lib/nivo-lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/lib/nivo-themes/default/default.css" type="text/css" />
-    <!-- STYLE CSS -->
+    <!--responsive slides-->
+    <link rel="stylesheet" href="css/lib/responsiveslides/responsiveslides.css">
+    <link rel="stylesheet" href="css/lib/responsiveslides/themes.css">
+     <!-- STYLE CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- SCHEME CSS -->
     <link href="css/scheme/blue.css" rel="stylesheet">
@@ -79,46 +82,82 @@
             <!-- BEGIN HOME -->
             <section id="home" class="home">
                 <!-- Superslides -->
-                <div id="home-slide">
-                    <ul class="slides-container text-center">
-                        <li>
-                            <div class="slide-text">
-                                <h2>With Bootstrap</h2>
-                                <span>Vivamus sit amet libero turpis non venenatis urna in blandit</span>
-                                <br/>
-                            </div>
-                            <div class="slide-filter"></div>
-                            <div style="background-image: url('images/slide-1.jpg');" class="bg-parallax parallaxize"></div>
-                        </li>
-                        <li>
-                            <div class="slide-text">
-                                <h2>Fullscreen Slider</h2>
-                                <span>Its form and sound are from the Latin The Latin borrowed</span>
-                                <br/>
-                            </div>
-                            <div class="slide-filter"></div>
-                            <div style="background-image: url('images/blog-1.jpg');" class="bg-parallax parallaxize"></div>
-                        </li>
-                        <li>
-                            <!-- Slide -->
-                            <div class="slide-text">
-                                <h2>Responsive Ready</h2>
-                                <span>Has two sounds one simple as in gave go gull the other compound</span>
-                                <br/>
-                            </div>
-                            <div class="slide-filter"></div>
-                            <div style="background-image: url('images/slide-3.jpg');" class="bg-parallax parallaxize"></div>
-                        </li>
-                    </ul>
-                    <nav class="slides-navigation slidez">
-                        <a href="javascript:;" class="next">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                        <a href="javascript:;" class="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    </nav>
+                <!--<div id="home-slide">-->
+                    <!--<ul class="slides-container text-center">-->
+                        <!--<li>-->
+                            <!--<div class="slide-text">-->
+                                <!--<h2>With Bootstrap</h2>-->
+                                <!--<span>Vivamus sit amet libero turpis non venenatis urna in blandit</span>-->
+                                <!--<br/>-->
+                            <!--</div>-->
+                            <!--<div class="slide-filter"></div>-->
+                            <!--<div style="background-image: url('images/slide-1.jpg');" class="bg-parallax parallaxize"></div>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<div class="slide-text">-->
+                                <!--<h2>Fullscreen Slider</h2>-->
+                                <!--<span>Its form and sound are from the Latin The Latin borrowed</span>-->
+                                <!--<br/>-->
+                            <!--</div>-->
+                            <!--<div class="slide-filter"></div>-->
+                            <!--<div style="background-image: url('images/blog-1.jpg');" class="bg-parallax parallaxize"></div>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--&lt;!&ndash; Slide &ndash;&gt;-->
+                            <!--<div class="slide-text">-->
+                                <!--<h2>Responsive Ready</h2>-->
+                                <!--<span>Has two sounds one simple as in gave go gull the other compound</span>-->
+                                <!--<br/>-->
+                            <!--</div>-->
+                            <!--<div class="slide-filter"></div>-->
+                            <!--<div style="background-image: url('images/slide-3.jpg');" class="bg-parallax parallaxize"></div>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                    <!--<nav class="slides-navigation slidez">-->
+                        <!--<a href="javascript:;" class="next">-->
+                            <!--<i class="fa fa-angle-right"></i>-->
+                        <!--</a>-->
+                        <!--<a href="javascript:;" class="prev">-->
+                            <!--<i class="fa fa-angle-left"></i>-->
+                        <!--</a>-->
+                    <!--</nav>-->
+                <!--</div>               -->
+
+                <!--<div id="sliderFrame">-->
+                    <!--<div id="slider">-->
+                        <!--<a href="http://www.menucool.com/jquery-slider" target="_blank">-->
+                            <!--<img src="images/image-slider-1.jpg" alt="Welcome to jQuery Slider" />-->
+                        <!--</a>-->
+                        <!--<a class="lazyImage" href="images/image-slider-2.jpg" title="Pure Javascript. No jQuery. No Flash.">Pure JavaScript</a>-->
+                        <!--<a href="http://www.menucool.com/javascript-image-slider"><b data-src="images/image-slider-3.jpg">Image Slider</b></a>-->
+                        <!--<a class="lazyImage" href="images/image-slider-4.jpg" title="">Slide 4</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="rslides_container">
+                            <ul id="slides" class="rslides">
+                                <li>
+                                    <img src="images/slide-1.jpg" alt="" />
+                                    <p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
+                                </li>
+                                <li>
+                                    <img src="images/slide-2.jpg" alt="" />
+                                    <p class="caption">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                </li>
+                                <li>
+                                    <img src="images/slide-3.jpg" alt="" />
+                                    <p class="caption">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
+
+
+
                 <!-- End of Superslide -->
             </section>
             <!-- END HOME -->
@@ -725,10 +764,9 @@
     <script src="js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
     <!-- Mobile Responsive Javascript -->
     <script src="js/lib/jquery.mobileresponsive.js"></script>
-    <!-- Google Map Source -->
-    <script src="js/lib/gmap3.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
     <!-- Main Action Javascript -->
+    <!--Slider-->
+    <script src="js/lib/responsiveslides.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

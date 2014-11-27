@@ -8,6 +8,22 @@
     [ TYPHOGRAPY ]
 */
 
+/* MAIN SLIDER*/
+
+ul#slides{
+    height: 450px;
+    width: 100%;
+    max-width: none !important;
+}
+
+ul#slides li{
+    height: inherit;
+}
+
+ul#slides li p{
+    background:rgba(38, 41, 46, 0.7);
+}
+
 
 /*Technology Details Page*/
 .technology-details-container{

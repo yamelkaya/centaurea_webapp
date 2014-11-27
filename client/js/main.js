@@ -17,6 +17,17 @@ dp(document).ready(function() {
         play: 6000,
         pagination: false
     });
+
+    //dp('.slider').unslider({dots: true, speed: 1000, delay: 3000});
+    dp('#slides').responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        timeout: 4000,
+        speed: 500,
+        namespace: "transparent-btns"
+    });
+
     //FIT VIDS
     if (dp.fn.fitVids) {
         dp(".fitvids").fitVids();
