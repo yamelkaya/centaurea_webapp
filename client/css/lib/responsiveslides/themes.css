@@ -3,11 +3,11 @@
   }
 
 .rslides_container {
-  margin-bottom: 50px;
   position: relative;
   float: left;
   width: 100%;
-  }
+  padding: 45px 60px 0 60px
+}
 
 .centered-btns_nav {
   z-index: 3;
@@ -89,9 +89,13 @@
 .centered-btns_tabs,
 .transparent-btns_tabs,
 .large-btns_tabs {
-  margin-top: 10px;
+  margin-top: -67px;
   text-align: center;
-  }
+  z-index: 20;
+  position: relative;
+  padding: 10px 0 3px 0;
+  margin-bottom: 67px;
+}
 
 .centered-btns_tabs li,
 .transparent-btns_tabs li,
@@ -100,8 +104,26 @@
   float: none;
   _float: left;
   *float: left;
-  margin-right: 5px;
+  background: rgba(35, 37, 42, 0.88);
+  padding: 10px 3px 4px 3px;
+
   }
+
+.centered-btns_tabs li:first-child,
+.transparent-btns_tabs li:first-child,
+.large-btns_tabs li:first-child{
+  border-radius: 15px 0 0 15px;
+  padding-left: 15px;
+}
+
+.centered-btns_tabs li:last-child,
+.transparent-btns_tabs li:last-child,
+.large-btns_tabs li:last-child{
+  border-radius: 0 15px 15px 0;
+  padding-right: 15px;
+}
+
+
 
 .centered-btns_tabs a,
 .transparent-btns_tabs a,
@@ -119,8 +141,8 @@
   -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
   -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
   box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   }
 
 .centered-btns_here a,
@@ -133,12 +155,13 @@
 .caption {
   position: absolute;
   display: block;
-  bottom: 0;
+  top: 27%;
   left: 0;
   right: 0;
-  padding: 15px;
+  padding: 35px;
   text-align: center;
-  background: #000;
-  background: rgba(0,0,0, .8);
+  background: #23252A;
+  background: rgba(36, 130, 253, 0.8);
   color: #fff;
+  font-size: 42px;
 }
