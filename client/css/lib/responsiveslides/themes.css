@@ -6,7 +6,7 @@
   position: relative;
   float: left;
   width: 100%;
-  padding: 45px 60px 0 60px
+  /*padding: 45px 60px 0 60px*/
 }
 
 .centered-btns_nav {
@@ -45,7 +45,7 @@
   background: #fff; /* Fix for IE6-9 */
   opacity: 0;
   filter: alpha(opacity=1);
-  width: 48%;
+  width: 28%;
   text-indent: -9999px;
   overflow: hidden;
   height: 91%;
@@ -152,16 +152,60 @@
   background: rgba(36, 130, 253, 0.8);
   }
 
-.caption {
-  position: absolute;
-  display: block;
-  top: 27%;
-  left: 0;
-  right: 0;
-  padding: 35px;
-  text-align: center;
+.rslides .center .caption {
+  display: inline-block;
+  padding: 19px 20px;
   background: #23252A;
   background: rgba(36, 130, 253, 0.8);
   color: #fff;
-  font-size: 42px;
+  font-size: 40px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+.rslides .center .details {
+  display: block;
+  margin-bottom: 23px;
+}
+
+.rslides .center .details>p{
+  display: inline-block;
+  padding: 11px 20px;
+  background: #23252A;
+  background: rgba(41, 41, 41, 0.80);
+  color: #fff;
+  font-size: 14px;
+}
+
+.rslides .center{
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 25%;
+}
+
+.rslides .center .more-info-btn{
+  box-shadow: none;
+  position: relative;
+  text-decoration: none !important;
+  padding: 11px 35px;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: none;
+  color: #ffffff;
+  border-radius: 0;
+  border: 3px solid #ffffff;
+  display: inline-block;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.rslides .center .more-info-btn:hover{
+  color: #2482FD;
+  background: #ffffff;
+  text-decoration: none !important;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
