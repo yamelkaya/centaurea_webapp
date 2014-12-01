@@ -507,6 +507,18 @@ footer p {
     margin-top: 0;
     margin-bottom: 15px;
 }
+
+.services .client-slider {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.services .client-slider li {
+    margin: 5px 5px;
+    display: inline-block;
+}
 /* ====== Portfolio ====== */
 .portfolio {
     padding-top: 60px;
@@ -759,17 +771,7 @@ footer p {
     right: 20px;
     color: #FFF;
 }
-.about .client-slider {
-    list-style: none;
-    padding-left: 0;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-}
-.about .client-slider li {
-    margin: 5px 5px;
-    display: inline-block;
-}
+
 /* ====== Blog Front ====== */
 .blog-front article {
     position: relative;
@@ -884,8 +886,8 @@ footer p {
 }
 /* ====== BLOG PAGES ====== */
 #container section.blog {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 #primary {
     padding-right: 20px;
@@ -1136,8 +1138,8 @@ footer p {
 }
 .blog-comments form input, .blog-comments form textarea {
     border-radius: 0;
-    background: rgba(0, 0, 0, .07);
-    color: #85939b;
+    background: rgba(0, 0, 0, .27);
+    color: #ffffff;
     border:none;
     border-left:1px solid #DDAD02;
     box-shadow: none;
@@ -1198,7 +1200,7 @@ footer p {
     margin-bottom: 7px;
 }
 .widgetbar .widget .search-widget input[type='text'] {
-    height: 50px;
+    height: 40px;
     border-radius: 0;
     background: rgba(0, 0, 0, .2);
     border:none;
@@ -1206,13 +1208,13 @@ footer p {
     box-shadow: none;
 }
 .widgetbar .widget .search-widget .btn {
-    height: 50px;
+    height: 40px;
     border-radius: 0;
     background: rgba(0, 0, 0, .2);
     border:none;
-    color: #282B30;
+    color: #797979;
     box-shadow: none;
-    font-size: 20px;
+    font-size: 18px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -1322,10 +1324,10 @@ footer p {
     line-height: 70px;
 }
 .widgetbar .widget .search-widget input::-webkit-input-placeholder {
-    color: #333;
+    color: #797979;
 }
 .widgetbar .widget .search-widget::-moz-placeholder {
-    color: #333;
+    color: #797979;
 }
 
 .dpSmall #sidebar .navbar-default .navbar-nav>.active:after,
@@ -1572,12 +1574,13 @@ form .form-group label {
 }
 form .form-control, form textarea {
     border-radius: 0;
-    background: rgba(0, 0, 0, .07);
-    color: #85939b;
+    background: rgba(0, 0, 0, .27);
+    color: #ffffff;
     border:none;
     border-left:1px solid #DDAD02;
     box-shadow: none;
 }
+
 form input.form-control {
     height: 40px;
     margin-bottom: 3px;
