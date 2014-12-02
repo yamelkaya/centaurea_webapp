@@ -5,7 +5,7 @@ a{color:#54697e;}
 .totop:hover span>a.hover{color:#54697e;}
 .social-icon li:hover a{background:#54697e;}
 .home .slides-navigation a:hover{color:#54697e;}
-.services .services-icon{background:#54697e;}
+.services .about-icon {background:#54697e;}
 .testimonial .icon-testimonial{color:#54697e;}
 .testimonial .quote-right-indicator:hover,.testimonial .quote-left-indicator:hover{color:#54697e;}
 .about .skill-bar ul li .bar{background:#54697e;}
@@ -19,7 +19,7 @@ a{color:#54697e;}
 .blog-comments form input:focus,.blog-comments form textarea:focus{border:1px solid #54697e;}
 .widgetbar .widget ul li a:hover{color:#54697e;}
 .widget .widget-title a:hover{color:#54697e;}
-.dpSmall .services .services-icon,.dpXsmall .services .services-icon{background:#54697e;}
+.dpSmall .services .about-icon,.dpXsmall .services .about-icon {background:#54697e;}
 .pace .pace-progress{background:#54697e;box-shadow:0px 0px 5px 0px #54697e;}
 form .form-control,form textarea{border-left:1px solid #54697e;}
 form .form-control:focus,form textarea:focus{border:1px solid #54697e;}

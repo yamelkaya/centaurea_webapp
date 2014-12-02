@@ -5,7 +5,7 @@ a{color:#f1c40f;}
 .totop:hover span>a.hover{color:#f1c40f;}
 .social-icon li:hover a{background:#f1c40f;}
 .home .slides-navigation a:hover{color:#f1c40f;}
-.services .services-icon{background:#f1c40f;}
+.services .about-icon {background:#f1c40f;}
 .testimonial .icon-testimonial{color:#f1c40f;}
 .testimonial .quote-right-indicator:hover,.testimonial .quote-left-indicator:hover{color:#f1c40f;}
 .about .skill-bar ul li .bar{background:#f1c40f;}
@@ -19,7 +19,7 @@ a{color:#f1c40f;}
 .blog-comments form input:focus,.blog-comments form textarea:focus{border:1px solid #f1c40f;}
 .widgetbar .widget ul li a:hover{color:#f1c40f;}
 .widget .widget-title a:hover{color:#f1c40f;}
-.dpSmall .services .services-icon,.dpXsmall .services .services-icon{background:#f1c40f;}
+.dpSmall .services .about-icon,.dpXsmall .services .about-icon {background:#f1c40f;}
 .pace .pace-progress{background:#f1c40f;box-shadow:0px 0px 5px 0px #f1c40f;}
 form .form-control,form textarea{border-left:1px solid #f1c40f;}
 form .form-control:focus,form textarea:focus{border:1px solid #f1c40f;}
