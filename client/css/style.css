@@ -8,6 +8,26 @@
     [ TYPHOGRAPY ]
 */
 
+/*DEVELOPMENT PAGE*/
+#software-design-and-development .solutions{
+    padding-left: 0px;
+}
+#software-design-and-development .solutions .fa,
+#software-design-and-development .solutions .glyphicon
+{
+    font-size: 40px;
+}
+
+#software-design-and-development .technologies img{
+    width: 60px;
+    margin: 0 0 7px 0;
+}
+
+/*SERVICES PAGES TEMPLATE*/
+#container section.services-container{
+    padding-top: 40px;
+}
+
 /*SERVICES ITEMS*/
 
 #container section.services-item{
