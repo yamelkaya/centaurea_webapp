@@ -278,6 +278,9 @@ footer p {
 .pd-rt-0{
     padding-right: 0px;
 }
+.pd-lt-3{
+    padding-left: 15px;
+}
 
 .totop {
     position: fixed;
@@ -517,38 +520,60 @@ footer p {
     width: 100%;
 }
 
-.services .teams {
-    color: #202020;
-    background: #FFF;
-    margin-bottom: 40px;
+.services .service-items {
+    color: #FFF;
+    background: transparent;
     position: relative;
     z-index: 1;
 }
-.services .teams .pict {
+.services .service-items .pict {
     position: relative;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
-.services .teams .pict img {
+.services .service-items .pict img {
     position: relative;
     z-index: -1;
     max-width: 100%;
     width: 100%;
 }
-.services .teams h3 {
+.services .service-items h3 {
+    margin-top: 10px;
     margin-bottom: 20px;
-    color: #202020;
+    /*color:#1f82ff;*/
     font-weight: 400;
 }
-.services .teams .desc {
-    padding:25px;
+.services .service-items .desc {
+    padding-right: 30px;
 }
-.services .teams span {
-    font-size: 13px;
-    font-weight: 700;
-    display: block;
-    position: relative;
-    padding-bottom: 30px;
+
+.services .service-items .glyphicon,
+.services .service-items .fa
+{
+    color: #1f82ff;
+    font-size: smaller;
+    margin-right: 10px;
 }
+.services .service-items .glyphicon,
+{
+    font-size: smaller;
+}
+
+.services .service-items .desc .info {
+    /*height: 210px;*/
+    overflow: hidden;
+    font-size: 16px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.services .service-items .desc .info h3 a{
+    color: #ffffff;
+}
+
+.services .service-items .desc .info h3 a:hover{
+    color: #1f82ff;
+}
+
 /* ====== Portfolio ====== */
 .portfolio {
     padding-top: 60px;
