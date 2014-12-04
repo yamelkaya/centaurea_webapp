@@ -1,5 +1,5 @@
 {
-    "routePattern": "/controller/action/id",
+    "routePattern": "controller/action/id",
     "defaultRoute": "/home/index",
     "serverPort": 7777,
     "controllerFolderPath": "./src/controllers/",

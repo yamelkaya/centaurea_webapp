@@ -5,10 +5,15 @@ var HomeController = function (){
 };
 
 HomeController.prototype = {
+
     index: function(){
         var file = fs.readFileSync('./public/index.html', 'utf-8');
         return file;
 
+    },
+
+    technologies: function(id){
+        console.log(id)
     }
 };
 

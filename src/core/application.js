@@ -24,6 +24,8 @@ var Application = function(configPath){
         }catch(exception){
             process.stdout.write("Request to: " + request.url + '\n');
             process.stdout.write(exception + '\n');
+            response.writeHead(500, {"Content-Type": "text/html"});
+            response.end("Server error occurred. We already fixing it.");
         }
     });
     this.fileServer = new FileServer('.');

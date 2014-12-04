@@ -2,164 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7933ea5c-864d-4cf7-92a4-cf7155fc73e7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controllers/homeController.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\blog-post.html" afterPath="$PROJECT_DIR$/public/blog-post.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\blog.html" afterPath="$PROJECT_DIR$/public/blog.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\bootstrap-theme.css" afterPath="$PROJECT_DIR$/public/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/public/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\bootstrap.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\bootstrap.min.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\font-awesome.css" afterPath="$PROJECT_DIR$/public/css/lib/font-awesome.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-lightbox.css" afterPath="$PROJECT_DIR$/public/css/lib/nivo-lightbox.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-themes\default\close.png" afterPath="$PROJECT_DIR$/public/css/lib/nivo-themes/default/close.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-themes\default\close@2x.png" afterPath="$PROJECT_DIR$/public/css/lib/nivo-themes/default/close@2x.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-themes\default\default.css" afterPath="$PROJECT_DIR$/public/css/lib/nivo-themes/default/default.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-themes\default\loading.gif" afterPath="$PROJECT_DIR$/public/css/lib/nivo-themes/default/loading.gif" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-themes\default\loading@2x.gif" afterPath="$PROJECT_DIR$/public/css/lib/nivo-themes/default/loading@2x.gif" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-themes\default\next.png" afterPath="$PROJECT_DIR$/public/css/lib/nivo-themes/default/next.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-themes\default\next@2x.png" afterPath="$PROJECT_DIR$/public/css/lib/nivo-themes/default/next@2x.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-themes\default\prev.png" afterPath="$PROJECT_DIR$/public/css/lib/nivo-themes/default/prev.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\nivo-themes\default\prev@2x.png" afterPath="$PROJECT_DIR$/public/css/lib/nivo-themes/default/prev@2x.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\pace.css" afterPath="$PROJECT_DIR$/public/css/lib/pace.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\responsiveslides\responsiveslides.css" afterPath="$PROJECT_DIR$/public/css/lib/responsiveslides/responsiveslides.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\responsiveslides\themes.css" afterPath="$PROJECT_DIR$/public/css/lib/responsiveslides/themes.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\lib\zocial.css" afterPath="$PROJECT_DIR$/public/css/lib/zocial.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\blue.css" afterPath="$PROJECT_DIR$/public/css/scheme/blue.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\blue.less" afterPath="$PROJECT_DIR$/public/css/scheme/blue.less" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\darkblue.css" afterPath="$PROJECT_DIR$/public/css/scheme/darkblue.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\darkblue.less" afterPath="$PROJECT_DIR$/public/css/scheme/darkblue.less" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\green.css" afterPath="$PROJECT_DIR$/public/css/scheme/green.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\green.less" afterPath="$PROJECT_DIR$/public/css/scheme/green.less" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\orange.css" afterPath="$PROJECT_DIR$/public/css/scheme/orange.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\orange.less" afterPath="$PROJECT_DIR$/public/css/scheme/orange.less" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\pink.css" afterPath="$PROJECT_DIR$/public/css/scheme/pink.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\pink.less" afterPath="$PROJECT_DIR$/public/css/scheme/pink.less" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\red.css" afterPath="$PROJECT_DIR$/public/css/scheme/red.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\red.less" afterPath="$PROJECT_DIR$/public/css/scheme/red.less" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\yellow.css" afterPath="$PROJECT_DIR$/public/css/scheme/yellow.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\scheme\yellow.less" afterPath="$PROJECT_DIR$/public/css/scheme/yellow.less" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\css\style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\FontAwesome.otf" afterPath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\zocial-regular-webfont.eot" afterPath="$PROJECT_DIR$/public/fonts/zocial-regular-webfont.eot" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\zocial-regular-webfont.svg" afterPath="$PROJECT_DIR$/public/fonts/zocial-regular-webfont.svg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\zocial-regular-webfont.ttf" afterPath="$PROJECT_DIR$/public/fonts/zocial-regular-webfont.ttf" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\fonts\zocial-regular-webfont.woff" afterPath="$PROJECT_DIR$/public/fonts/zocial-regular-webfont.woff" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\html_old\blog - Copy.html" afterPath="$PROJECT_DIR$/public/html_old/blog - Copy.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\html_old\blog-post - Copy.html" afterPath="$PROJECT_DIR$/public/html_old/blog-post - Copy.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\icon-map.svg" afterPath="$PROJECT_DIR$/public/icon-map.svg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\ads336x280.png" afterPath="$PROJECT_DIR$/public/images/ads336x280.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\author.png" afterPath="$PROJECT_DIR$/public/images/author.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\avatar-1.png" afterPath="$PROJECT_DIR$/public/images/avatar-1.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\avatar-2.png" afterPath="$PROJECT_DIR$/public/images/avatar-2.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\avatar-3.png" afterPath="$PROJECT_DIR$/public/images/avatar-3.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\bg4_light_pattern.png" afterPath="$PROJECT_DIR$/public/images/bg4_light_pattern.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\bg4_pattern.png" afterPath="$PROJECT_DIR$/public/images/bg4_pattern.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\blog-1.jpg" afterPath="$PROJECT_DIR$/public/images/blog-1.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\blog-2.jpg" afterPath="$PROJECT_DIR$/public/images/blog-2.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\blog-3.jpg" afterPath="$PROJECT_DIR$/public/images/blog-3.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\blog-4.jpg" afterPath="$PROJECT_DIR$/public/images/blog-4.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\blog-5.jpg" afterPath="$PROJECT_DIR$/public/images/blog-5.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\blog-6.jpg" afterPath="$PROJECT_DIR$/public/images/blog-6.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\call-ta-background.jpg" afterPath="$PROJECT_DIR$/public/images/call-ta-background.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\favicon\favico.png" afterPath="$PROJECT_DIR$/public/images/favicon/favico.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\favicon\favicon.ico" afterPath="$PROJECT_DIR$/public/images/favicon/favicon.ico" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\left-arrow.png" afterPath="$PROJECT_DIR$/public/images/left-arrow.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\loading.gif" afterPath="$PROJECT_DIR$/public/images/loading.gif" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo.png" afterPath="$PROJECT_DIR$/public/images/logo.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo1.png" afterPath="$PROJECT_DIR$/public/images/logo1.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo2.png" afterPath="$PROJECT_DIR$/public/images/logo2.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo3.png" afterPath="$PROJECT_DIR$/public/images/logo3.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo4.png" afterPath="$PROJECT_DIR$/public/images/logo4.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo5.png" afterPath="$PROJECT_DIR$/public/images/logo5.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo6.png" afterPath="$PROJECT_DIR$/public/images/logo6.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo7.png" afterPath="$PROJECT_DIR$/public/images/logo7.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo8.png" afterPath="$PROJECT_DIR$/public/images/logo8.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo9.png" afterPath="$PROJECT_DIR$/public/images/logo9.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\logo_V2.png" afterPath="$PROJECT_DIR$/public/images/logo_V2.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\map-marker.png" afterPath="$PROJECT_DIR$/public/images/map-marker.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\people-1.jpg" afterPath="$PROJECT_DIR$/public/images/people-1.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\people-2.jpg" afterPath="$PROJECT_DIR$/public/images/people-2.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\people-3.jpg" afterPath="$PROJECT_DIR$/public/images/people-3.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\people-4.jpg" afterPath="$PROJECT_DIR$/public/images/people-4.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-1.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-1.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-10.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-10.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-11.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-11.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-12.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-12.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-13.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-13.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-14.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-14.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-15.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-15.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-16.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-16.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-17.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-17.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-18.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-18.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-2.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-2.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-3.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-3.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-4.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-4.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-5.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-5.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-6.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-6.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-7.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-7.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-8.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-8.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\portfolio-thumb-9.jpg" afterPath="$PROJECT_DIR$/public/images/portfolio-thumb-9.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\post-1.jpg" afterPath="$PROJECT_DIR$/public/images/post-1.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\post-2.jpg" afterPath="$PROJECT_DIR$/public/images/post-2.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\post-3.jpg" afterPath="$PROJECT_DIR$/public/images/post-3.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\right-arrow.png" afterPath="$PROJECT_DIR$/public/images/right-arrow.png" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\services-1.jpg" afterPath="$PROJECT_DIR$/public/images/services-1.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\services-2.jpg" afterPath="$PROJECT_DIR$/public/images/services-2.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\services-3.jpg" afterPath="$PROJECT_DIR$/public/images/services-3.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\slide-1.jpg" afterPath="$PROJECT_DIR$/public/images/slide-1.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\slide-2.JPG" afterPath="$PROJECT_DIR$/public/images/slide-2.JPG" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\slide-3.jpg" afterPath="$PROJECT_DIR$/public/images/slide-3.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\cloud_1.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/cloud_1.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\cloud_2.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/cloud_2.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\cloud_3.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/cloud_3.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\design_1.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/design_1.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\design_2.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/design_2.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\design_3.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/design_3.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\design_4.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/design_4.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\design_5.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/design_5.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\design_6.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/design_6.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\design_7.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/design_7.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\images\test_slide_images\design_8.jpg" afterPath="$PROJECT_DIR$/public/images/test_slide_images/design_8.jpg" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\index - Copy.html" afterPath="$PROJECT_DIR$/public/index - Copy.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\bootstrap.js" afterPath="$PROJECT_DIR$/public/js/bootstrap.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\bootstrap.min.js" afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\html5shiv.js" afterPath="$PROJECT_DIR$/public/js/html5shiv.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\jquery-1.10.2.js" afterPath="$PROJECT_DIR$/public/js/jquery-1.10.2.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/public/js/jquery-1.10.2.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\gmap3.min.js" afterPath="$PROJECT_DIR$/public/js/lib/gmap3.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\jquery.backstretch.min.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery.backstretch.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\jquery.backtotop.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery.backtotop.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\jquery.carouFredSel-6.2.1-packed.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery.carouFredSel-6.2.1-packed.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\jquery.fitvid.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery.fitvid.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\jquery.mixitup.min.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery.mixitup.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\jquery.mobileresponsive.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery.mobileresponsive.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\jquery.sudoslider.min.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery.sudoslider.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\jquery.superslides.min.js" afterPath="$PROJECT_DIR$/public/js/lib/jquery.superslides.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\nivo-lightbox.min.js" afterPath="$PROJECT_DIR$/public/js/lib/nivo-lightbox.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\pace.min.js" afterPath="$PROJECT_DIR$/public/js/lib/pace.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\responsiveslides.min.js" afterPath="$PROJECT_DIR$/public/js/lib/responsiveslides.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\lib\smoothscroll.js" afterPath="$PROJECT_DIR$/public/js/lib/smoothscroll.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\js\respond.min.js" afterPath="$PROJECT_DIR$/public/js/respond.min.js" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\services\consulting.html" afterPath="$PROJECT_DIR$/public/services/consulting.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\services\corporate-trainings.html" afterPath="$PROJECT_DIR$/public/services/corporate-trainings.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\services\cto-as-a-service.html" afterPath="$PROJECT_DIR$/public/services/cto-as-a-service.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\services\dedicated-team.html" afterPath="$PROJECT_DIR$/public/services/dedicated-team.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\services\development.html" afterPath="$PROJECT_DIR$/public/services/development.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\services\managed-services.html" afterPath="$PROJECT_DIR$/public/services/managed-services.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\services\mongodb-as-a-service.html" afterPath="$PROJECT_DIR$/public/services/mongodb-as-a-service.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\shortcodes.html" afterPath="$PROJECT_DIR$/public/shortcodes.html" />
-      <change type="MOVED" beforePath="C:\code\centaurea_webapp\client\technologies\mongodb.html" afterPath="$PROJECT_DIR$/public/technologies/mongodb.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controllers/technologiesController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/application.js" afterPath="$PROJECT_DIR$/src/core/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.json" afterPath="$PROJECT_DIR$/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/constants.js" afterPath="$PROJECT_DIR$/src/core/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/homeController.js" afterPath="$PROJECT_DIR$/src/controllers/homeController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/technologies/mongodb.html" afterPath="$PROJECT_DIR$/public/technologies/mongodb.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/routing.js" afterPath="$PROJECT_DIR$/src/core/routing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centaurea_webapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -183,71 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="development.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/services/development.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.970588" vertical-offset="1004" max-vertical-offset="5100">
-              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="managed-services.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/services/managed-services.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.088235" vertical-offset="1000" max-vertical-offset="3675">
-              <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mongodb-as-a-service.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/services/mongodb-as-a-service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3750">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1650" max-vertical-offset="3125">
-              <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="3175">
+              <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index - Copy.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index - Copy.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index - Copy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="3254" max-vertical-offset="21950">
-              <caret line="141" column="61" selection-start-line="141" selection-start-column="61" selection-end-line="141" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="node-static.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/node-static/lib/node-static.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3289" max-vertical-offset="10050">
-              <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.0882354" vertical-offset="9002" max-vertical-offset="21950">
+              <caret line="367" column="69" selection-start-line="367" selection-start-column="69" selection-end-line="367" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -256,18 +57,38 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0882354" vertical-offset="302" max-vertical-offset="22225">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state vertical-scroll-proportion="-5.4117646" vertical-offset="9116" max-vertical-offset="22225">
+              <caret line="372" column="56" selection-start-line="372" selection-start-column="56" selection-end-line="372" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.WebStorm9/system/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/fs.js">
+      <file leaf-file-name="executionFlow.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/executionFlow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1987" max-vertical-offset="43950">
-              <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1685" max-vertical-offset="3350">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/routing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="785" max-vertical-offset="2025">
+              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homeController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/homeController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -276,8 +97,38 @@
       <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4117646" vertical-offset="0" max-vertical-offset="300">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state vertical-scroll-proportion="-0.7352941" vertical-offset="0" max-vertical-offset="300">
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="technologiesController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/technologiesController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/hogan/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="650">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongodb.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/technologies/mongodb.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.72254336" vertical-offset="0" max-vertical-offset="600">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -295,8 +146,6 @@
         <option value="$PROJECT_DIR$/config/app.json" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/src/infrastructure/codeLoader.js" />
-        <option value="$PROJECT_DIR$/src/controllers/homeController.js" />
-        <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/public/shortcodes.html" />
         <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/public/css/bootstrap.min.css" />
@@ -312,9 +161,15 @@
         <option value="$PROJECT_DIR$/public/services/development.html" />
         <option value="$PROJECT_DIR$/public/services/managed-services.html" />
         <option value="$PROJECT_DIR$/public/services/mongodb-as-a-service.html" />
+        <option value="$PROJECT_DIR$/public/index - Copy.html" />
+        <option value="$PROJECT_DIR$/src/core/constants.js" />
+        <option value="$PROJECT_DIR$/src/controllers/homeController.js" />
+        <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/src/core/routing.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/core/application.js" />
-        <option value="$PROJECT_DIR$/public/index - Copy.html" />
+        <option value="$PROJECT_DIR$/src/controllers/technologiesController.js" />
+        <option value="$PROJECT_DIR$/public/technologies/mongodb.html" />
       </list>
     </option>
   </component>
@@ -390,6 +245,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centaurea_webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centaurea_webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -408,7 +281,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="technologies" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,15 +295,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_slide_images" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,14 +406,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30760625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15015975" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40715882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -563,10 +428,10 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30760625" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40715882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -574,10 +439,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1503441" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15015975" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -600,27 +465,47 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/node-static/lib/node-static.js</url>
-          <line>138</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/node-static/lib/node-static.js</url>
-          <line>134</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/core/application.js</url>
-          <line>81</line>
+          <line>83</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/node-static/lib/node-static.js</url>
-          <line>158</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/src/controllers/homeController.js</url>
+          <line>15</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/core/application.js</url>
+          <line>91</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/core/application.js</url>
+          <line>99</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/core/executionFlow.js</url>
+          <line>91</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/core/routing.js</url>
+          <line>38</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/core/executionFlow.js</url>
+          <line>74</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/core/routing.js</url>
+          <line>54</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -628,6 +513,7 @@
         <watch expression="request.url" language="JavaScript" />
         <watch expression="decodeURI(url.parse(req.url).pathname);" language="JavaScript" />
         <watch expression="'.' + this.settings['staticContent']" language="JavaScript" />
+        <watch expression="controllerMetadata.actionsData[action]" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
@@ -648,14 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/executionFlow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="3350">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/lib/nivo-themes/default/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="2575">
@@ -668,30 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="1150">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/routing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="860" max-vertical-offset="2025">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/controllerFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2525">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/homeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -864,6 +718,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/controllerFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2029" max-vertical-offset="2525">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/node-static/lib/node-static.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3289" max-vertical-offset="10050">
@@ -872,34 +742,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/src/core/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0882354" vertical-offset="302" max-vertical-offset="22225">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="325">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/executionFlow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1685" max-vertical-offset="3350">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/routing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="785" max-vertical-offset="2025">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4117646" vertical-offset="0" max-vertical-offset="300">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1650" max-vertical-offset="3125">
-          <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+        <state vertical-scroll-proportion="-0.7352941" vertical-offset="0" max-vertical-offset="300">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index - Copy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="3254" max-vertical-offset="21950">
-          <caret line="141" column="61" selection-start-line="141" selection-start-column="61" selection-end-line="141" selection-end-column="61" />
+        <state vertical-scroll-proportion="-5.0882354" vertical-offset="9002" max-vertical-offset="21950">
+          <caret line="367" column="69" selection-start-line="367" selection-start-column="69" selection-end-line="367" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="3175">
+          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4117646" vertical-offset="9116" max-vertical-offset="22225">
+          <caret line="372" column="56" selection-start-line="372" selection-start-column="56" selection-end-line="372" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/homeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/hogan/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="650">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/technologiesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/technologies/mongodb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72254336" vertical-offset="0" max-vertical-offset="600">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>
