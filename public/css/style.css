@@ -60,7 +60,7 @@ ul#slides li{
 /*Technology Details Page*/
 .technology-details-container{
     text-align: center;
-    background: url('../images/bg4_light_pattern.png')repeat;
+    background: url('/public/images/bg4_light_pattern.png')repeat;
     margin-top: 80px;
 }
 /**/
@@ -202,7 +202,7 @@ code {
     background: #1A1E22;
 }
 footer {
-    background: url('../images/bg4_light_pattern.png');
+    background: url('/public/images/bg4_light_pattern.png');
 }
 footer p {
     font-size: 14px;
@@ -218,7 +218,7 @@ footer .contact{
 #sidebar {
     position: fixed;
     width: 235px;
-    background: url('../images/bg4_pattern.png') repeat;
+    background: url('/public/images/bg4_pattern.png') repeat;
     height: 100%;
     left: 0;
     font-family:'Raleway', sans-serif;
@@ -296,10 +296,10 @@ footer .contact{
     padding: 0 60px;
 }
 #container section {
-    background: url('../images/bg4_light_pattern.png');
+    background: url('/public/images/bg4_light_pattern.png');
 }
 #container section.odd {
-    background: url('../images/bg4_light_pattern.png');
+    background: url('/public/images/bg4_light_pattern.png');
 }
 .mg-bt-80 {
     margin-bottom: 80px;
