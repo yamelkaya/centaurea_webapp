@@ -1,0 +1,24 @@
+{
+  "name": "centaurea",
+  "version": "0.0.1",
+  "description": "centaurea\r =========",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ivankarpey/centaurea.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivankarpey/centaurea/issues"
+  },
+  "devDependencies": {
+    "jasmine-node": "~1.11.0",
+    "grunt": "~0.4.1",
+    "grunt-jasmine-node": "~0.1.0"
+  },
+  "dependencies": {
+    "hogan": "^1.0.2",
+    "node-static": "~0.7.3"
+  }
+}
