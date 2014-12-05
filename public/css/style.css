@@ -103,7 +103,7 @@ ul#slides li{
 body {
     font-family:'Open Sans', sans-serif;
     color: #FFFFFF;
-    background: #1c1c1c;
+    background: url('/public/images/bg4_light_pattern.png')repeat;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family:'Open Sans', sans-serif;
@@ -136,7 +136,6 @@ iframe{
 .header-content h3 {
     font-family:'Raleway', sans-serif;
     font-weight: 600;
-    text-transform: capitalize;
     font-size: 24px;
 }
 ul.list li:before {
@@ -888,6 +887,10 @@ footer .contact{
 .services .about-desc h4 {
     margin-top: 0;
     margin-bottom: 15px;
+}
+
+h4.clients,h2.clients,h3.clients{
+    margin-top: 5px;
 }
 
 .about .client-slider {
@@ -1884,3 +1887,5 @@ form .form-control:focus, form textarea:focus {
         float:none;
     }
 }
+
+

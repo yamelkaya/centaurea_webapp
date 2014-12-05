@@ -71,7 +71,7 @@ function ExecutionFlow(dependencyResolver, context){
     this.executionContext.res.executionFlowResult = [];
 };
 
-ExecutionFlow.buildControllerFlow = function(resolver, filters, controllerMetadata, request, response, action){
+ExecutionFlow.buildControllerFlow = function(resolver, filters, controllerMetadata, request, response, uriData){
     var flow = new ExecutionFlow(resolver, {req: request, res: response});
 
     function addToFlow(collection){
@@ -85,10 +85,15 @@ ExecutionFlow.buildControllerFlow = function(resolver, filters, controllerMetada
     addToFlow(filters);
     addToFlow(controllerMetadata.attr);
 
-    var actionMetadata = controllerMetadata.actionsData[action];
+    var actionMetadata = controllerMetadata.actionsData[uriData.action];
     addToFlow(actionMetadata.attr);
 
-    flow.append(actionMetadata.func);
+    flow.append(function(){
+        return actionMetadata.func.apply(
+            new controllerMetadata.controller(),
+            arguments);
+    });
+
     return flow;
 };
 

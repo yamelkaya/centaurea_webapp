@@ -7,13 +7,26 @@ var HomeController = function (){
 HomeController.prototype = {
 
     index: function(){
-        var file = fs.readFileSync('./public/index.html', 'utf-8');
-        return file;
-
+        return this._loadPageAndCompile(
+            {
+                pagePath: './public/partials/index.html',
+                pageTitle: 'Centaurea - Development and consulting company'
+            },
+            this._masterPath);
     },
 
-    technologies: function(id){
-        console.log(id)
+    _masterPath : './public/master/master.html',
+
+    _loadPageAndCompile: function(data,masterPath){
+        var file = fs.readFileSync(data.pagePath, 'utf-8');
+        var template = hogan.compile(file);
+        var model = data;
+        model.partialHtml= template.render();
+
+        var master = fs.readFileSync(masterPath,'utf-8');
+        var masterTemplate = hogan.compile(master);
+
+        return masterTemplate.render(model);
     }
 };
 

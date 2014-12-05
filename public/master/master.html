@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
+    <!--&lt;!&ndash; PACE Loader &ndash;&gt;-->
+    <!--<script src="js/lib/pace.min.js"></script>-->
+    <!--<link href="/public/css/lib/pace.css" rel="stylesheet">-->
+    <!--&lt;!&ndash; END PACE Loader &ndash;&gt;-->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -9,7 +14,7 @@
     <link rel="shortcut icon" href="/public/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/public/images/favicon/favicon.ico" type="image/x-icon">
 
-    <title>Centaurea Counsalting Company</title>
+    <title>{{pageTitle}}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/public/css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +22,12 @@
     <link href="/public/css/lib/font-awesome.css" rel="stylesheet">
     <!-- Zocial CSS -->
     <link href="/public/css/lib/zocial.css" rel="stylesheet">
+    <!-- Nivo Lightbox CSS -->
+    <link href="/public/css/lib/nivo-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/lib/nivo-themes/default/default.css" type="text/css" />
+    <!--responsive slides-->
+    <link rel="stylesheet" href="/public/css/lib/responsiveslides/responsiveslides.css">
+    <link rel="stylesheet" href="/public/css/lib/responsiveslides/themes.css">
     <!-- STYLE CSS -->
     <link href="/public/css/style.css" rel="stylesheet">
     <!-- SCHEME CSS -->
@@ -30,6 +41,7 @@
 </head>
 
 <body data-spy="scroll">
+<div id="loader"></div>
 <div id="main-wrapper">
     <div id="sidebar">
         <nav class="navbar navbar-default" role="navigation">
@@ -42,22 +54,22 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                 <img src="/public/images/logo_V2.png" alt="logo garis">
+                    <img src="/public/images/logo_V2.png" alt="logo centaurea">
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a class="" href="../#home">Home</a>
+                    <li><a class="sscroll" href="#home">Home</a>
                     </li>
-                    <li class="active"><a class="" href="../#services">Services</a>
+                    <li><a class="sscroll" href="#services">Services</a>
                     </li>
-                    <li><a class="" href="../#about">About</a>
+                    <li><a class="sscroll" href="#about">About</a>
                     </li>
-                    <li><a class="" href="../#contact">Contact</a>
+                    <li><a class="sscroll" href="#contact">Contact</a>
                     </li>
-                    <li ><a class="" href="../blog.html">Blog</a>
+                    <li><a class="sscroll" href="#blog-front">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -67,32 +79,14 @@
 
     </div>
     <div id="container">
-        <!--BEGIN MONGODB AS A SERVICE-->
-        <section id="mongodb-as-a-service">
-            <div class="row">
-                <div class="col-md-9">
-                    <h3>Managed services
-                    </h3>
-                    <p>Stable infrastructure and safeness of data is an essential requirement for any business.
-                        Protect your data and keep your system healthy and well performed with our help.
-                        <a href="#contact">Contact us</a> for further information.</p>
-                </div>
+        {{{partialHtml}}}
 
-                <div class="col-md-3 widgetbar">
-                    <!-- /widget -->
-
-                    LIST WITH OTHER SERVICES?
-
-                </div>
-            </div>
-        </section>
-        <!--END MONGODB AS A SERVICE-->
         <!-- BEGIN FOOTER -->
         <footer>
             <div class="row">
                 <div class="col-md-12">
                     <p>
-                        <strong>Centaurea</strong>&nbsp;<span id="copyright-year"></span>
+                        <strong>© Centaurea</strong>&nbsp; <span id="copyright-year"></span>
                     </p>
                 </div>
             </div>
@@ -114,6 +108,8 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- Jquery Source -->
 <script src="/public/js/jquery-1.10.2.min.js"></script>
+<!-- Nivo Light Box Source -->
+<script src="/public/js/lib/nivo-lightbox.min.js"></script>
 <!-- Bootstrap Source -->
 <script src="/public/js/bootstrap.min.js"></script>
 <!-- Superslides Source -->
@@ -133,9 +129,9 @@
 <!-- Mobile Responsive Javascript -->
 <script src="/public/js/lib/jquery.mobileresponsive.js"></script>
 <!-- Main Action Javascript -->
-<script src="/public/js/main.js"></script>
 <!--Slider-->
 <script src="/public/js/lib/responsiveslides.min.js"></script>
+<script src="/public/js/main.js"></script>
 </body>
 
 </html>
