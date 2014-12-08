@@ -95,7 +95,7 @@ Application.prototype = {
                 controllerMetadata,
                 request,
                 response,
-                uriData.action).execute();
+                uriData).execute();
 
             this._sendResponse(response);
 

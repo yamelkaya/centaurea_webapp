@@ -6,8 +6,8 @@ a{color:#1abc9c;}
 .social-icon li:hover a{background:#1abc9c;}
 .home .slides-navigation a:hover{color:#1abc9c;}
 .services .about-icon {background:#1abc9c;}
-.testimonial .icon-testimonial{color:#1abc9c;}
-.testimonial .quote-right-indicator:hover,.testimonial .quote-left-indicator:hover{color:#1abc9c;}
+.clients .icon-testimonial{color:#1abc9c;}
+.clients .quote-right-indicator:hover,.clients .quote-left-indicator:hover{color:#1abc9c;}
 .about .skill-bar ul li .bar{background:#1abc9c;}
 .call-ta h2{border-left:3px solid #1abc9c;}
 .contact form input,.contact form textarea{border-left:1px solid #1abc9c;}
