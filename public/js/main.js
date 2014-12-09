@@ -34,7 +34,7 @@ dp(document).ready(function() {
         auto: true,
         pager: true,
         nav: true,
-        timeout: 4000,
+        timeout: 8000,
         speed: 500,
         namespace: "transparent-btns"
     });
