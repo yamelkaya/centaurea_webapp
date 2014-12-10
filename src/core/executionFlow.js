@@ -88,9 +88,12 @@ ExecutionFlow.buildControllerFlow = function(resolver, filters, controllerMetada
     var actionMetadata = controllerMetadata.actionsData[uriData.action];
     addToFlow(actionMetadata.attr);
 
+    var ctrlInstance = new controllerMetadata.controller();
+    ctrlInstance.requestData = uriData;
+
     flow.append(function(){
         return actionMetadata.func.apply(
-            new controllerMetadata.controller(),
+            ctrlInstance,
             arguments);
     });
 
