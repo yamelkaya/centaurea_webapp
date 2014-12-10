@@ -24,7 +24,7 @@ TechnologiesController.prototype = {
 
     couchdb: function(){
 
-        var file = fs.readFileSync('./public/technologies/view.html', 'utf-8');
+        var file = fs.readFileSync('./public/technologies/master-technologies.html', 'utf-8');
         template = hogan.compile(file);
         var model = {
             technologyName:"CouchDB",

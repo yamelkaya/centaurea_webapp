@@ -47,8 +47,8 @@
 /* MAIN SLIDER*/
 
 ul#slides{
-    height: 600px;
-    width: 100%;
+    height: 420px;
+    /*width: 100%;*/
     max-width: none !important;
 }
 
@@ -103,7 +103,7 @@ ul#slides li{
 body {
     font-family:'Open Sans', sans-serif;
     color: #FFFFFF;
-    background: #1c1c1c;
+    background: url('/public/images/bg4_light_pattern.png')repeat;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family:'Open Sans', sans-serif;
@@ -128,6 +128,7 @@ iframe{
 .header-content {
     margin-bottom: 40px;
     color: #FFF;
+    text-align: left;
 }
 .header-content h2 {
     font-weight: 600;
@@ -136,7 +137,6 @@ iframe{
 .header-content h3 {
     font-family:'Raleway', sans-serif;
     font-weight: 600;
-    text-transform: capitalize;
     font-size: 24px;
 }
 ul.list li:before {
@@ -304,6 +304,9 @@ footer .contact{
 .mg-bt-80 {
     margin-bottom: 80px;
 }
+.mg-bt-100 {
+    margin-bottom: 100px;
+}
 .mg-bt-60 {
     margin-bottom: 60px;
 }
@@ -325,6 +328,9 @@ footer .contact{
 
 .pd-rt-0{
     padding-right: 0px;
+}
+.pd-lt-0{
+    padding-left: 0px;
 }
 .pd-lt-3{
     padding-left: 15px;
@@ -730,32 +736,33 @@ footer .contact{
     transition: all .3s ease-in-out;
 }
 /* ====== Testimonial ====== */
-.testimonial {
+.clients {
     color: #FFF;
     text-align: center;
 }
-.testimonial ul li {
+
+.clients ul li {
     list-style: none;
     padding: 0;
 }
-.testimonial h2 {
+.clients li h2 {
     font-weight: 300;
     padding: 0 10%;
     font-size: 24px;
     line-height: 36px;
     text-align: center;
 }
-.testimonial .icon-testimonial {
+.clients .icon-testimonial {
     font-size: 35px;
     padding-bottom: 15px;
     color: #DDAD02;
 }
-.testimonial span {
+.clients span {
     padding-top: 20px;
     display: block;
     position: relative;
 }
-.testimonial span#controls {
+.clients span#controls {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -765,10 +772,10 @@ footer .contact{
     margin-right: -44px;
     line-height: 37px;
 }
-.testimonial .quote-right-indicator:hover, .testimonial .quote-left-indicator:hover {
+.clients .quote-right-indicator:hover, .clients .quote-left-indicator:hover {
     color: #DDAD02;
 }
-.testimonial .quote-right-indicator, .testimonial .quote-left-indicator {
+.clients .quote-right-indicator, .clients .quote-left-indicator {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -779,9 +786,28 @@ footer .contact{
     z-index: 1;
     color: #CECECE;
 }
-.testimonial .quote-left-indicator {
+.clients .quote-left-indicator {
     margin-right: 2px;
 }
+
+.clients .logo-container{
+    padding: 0 15px;
+}
+
+.clients .client-logo{
+    padding: 1px;
+}
+
+.clients .client-logo span{
+    background: #ffffff;
+    padding: 20px;
+}
+
+.clients .client-logo img{
+    width: 100%;
+    max-width: 180px;
+}
+
 /* ====== About ====== */
 .about .teams {
     color: #202020;
@@ -888,6 +914,10 @@ footer .contact{
 .services .about-desc h4 {
     margin-top: 0;
     margin-bottom: 15px;
+}
+
+h4.clients,h2.clients,h3.clients{
+    margin-top: 5px;
 }
 
 .about .client-slider {
@@ -1012,6 +1042,9 @@ footer .contact{
 .contact form input:focus, .contact form textarea:focus {
     box-shadow: none;
     border:1px solid #DDAD02;
+}
+.contact .contact-info span{
+    width: 20px;
 }
 /* ====== BLOG PAGES ====== */
 #container section.blog {
@@ -1830,6 +1863,14 @@ form .form-control:focus, form textarea:focus {
 }
 
 /* columns of same height styles */
+.row{
+    margin-right: 0px !important;
+}
+
+.row .col-*{
+    padding-right: 0px !important;
+}
+
 .container-xs-height {
     display:table;
     padding-left:0px;
@@ -1884,3 +1925,5 @@ form .form-control:focus, form textarea:focus {
         float:none;
     }
 }
+
+

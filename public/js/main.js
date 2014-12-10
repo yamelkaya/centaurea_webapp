@@ -1,6 +1,17 @@
 var dp = jQuery;
 dp.noConflict();
 dp(document).ready(function() {
+    //SET ACTIVE MENU ITEM
+    dp('.navbar-nav li a').each(function(index, item){
+           item = dp(item);
+           if (window.location.pathname.indexOf(item.text().toLowerCase())!= -1 ||
+               window.location.pathname == '/' && item.text().toLowerCase() == 'home'){
+               item.parent().addClass('active');
+           }
+           else {
+               item.parent().removeClass('active');
+           }
+        });
 
     dp('#copyright-year').html(new Date().getFullYear());
 
@@ -23,7 +34,7 @@ dp(document).ready(function() {
         auto: true,
         pager: true,
         nav: true,
-        timeout: 4000,
+        timeout: 8000,
         speed: 500,
         namespace: "transparent-btns"
     });
@@ -72,11 +83,11 @@ dp(document).ready(function() {
             width: '100%',
             scroll: 1,
             items: {
-                width: 116,
-                //  height: '30%',  //  optionally resize item-height
+                width: 330,
+                height: '100%',  //  optionally resize item-height
                 visible: {
                     min: 1,
-                    max: 5
+                    max: 3
                 }
             }
         });
