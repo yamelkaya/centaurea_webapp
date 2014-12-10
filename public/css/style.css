@@ -1867,7 +1867,7 @@ form .form-control:focus, form textarea:focus {
     margin-right: 0px !important;
 }
 
-.row .col-*{
+.row [class*='col-']{
     padding-right: 0px !important;
 }
 

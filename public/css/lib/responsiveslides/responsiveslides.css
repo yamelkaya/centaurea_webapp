@@ -28,6 +28,8 @@
   display: block;
   height: 420px;
   float: left;
-  width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -860px;
   border: 0;
   }
