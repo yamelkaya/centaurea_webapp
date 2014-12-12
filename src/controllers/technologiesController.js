@@ -6,38 +6,33 @@ var TechnologiesController = function (){
 
 TechnologiesController.prototype = {
 
-    mongodb: function(){
-
-        var file = fs.readFileSync('./public/technologies/mongodb.html', 'utf-8');
-        template = hogan.compile(file);
-        var model = {
-            technologyName:"MongoDB",
-            bodyText: "can help with anything companies need related to MongoDB. Everything from the application code, prototype,"+
-            "design, and development, all the way to deployment of the application within your architecture." +
-            "Specifically our team can help clients with application design, schema design, deployment architecture,"+
-            "enterprise scaling, query optimization, benchmarking and much more."
-        };
-
-        return template.render(model);
-
+    index: function () {
+        if (!this.requestData.queryString.name){
+            return;
+        }
+        else {
+            return this._loadPageAndCompile(
+                {
+                    pagePath: './public/partials/technologies/'+this.requestData.queryString.name+'.html'
+                },
+                this._masterPath);
+        }
     },
 
-    couchdb: function(){
 
-        var file = fs.readFileSync('./public/technologies/master-technologies.html', 'utf-8');
-        template = hogan.compile(file);
-        var model = {
-            technologyName:"CouchDB",
-            bodyText: "can help with anything companies need related to CouchDB. Everything from the application code, prototype,"+
-            "design, and development, all the way to deployment of the application within your architecture." +
-            "Specifically our team can help clients with application design, schema design, deployment architecture,"+
-            "enterprise scaling, query optimization, benchmarking and much more."
-        };
+    _masterPath : './public/master/master-technologies.html',
 
-        return template.render(model);
+    _loadPageAndCompile: function(data,masterPath){
+        var file = fs.readFileSync(data.pagePath, 'utf-8');
+        var template = hogan.compile(file);
+        var model = data;
+        model.partialHtml= template.render();
 
+        var master = fs.readFileSync(masterPath,'utf-8');
+        var masterTemplate = hogan.compile(master);
+
+        return masterTemplate.render(model);
     }
-
 };
 
 module.exports = TechnologiesController;

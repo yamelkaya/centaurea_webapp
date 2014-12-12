@@ -6,8 +6,8 @@ var BlogController = function (){
 
 BlogController.prototype = {
 
-    index: function (name) {
-        if (!name){
+    index: function () {
+        if (!this.requestData.queryString.name){
             return this._loadPageAndCompile(
                 {
                     pagePath: './public/partials/blog.html',
@@ -18,8 +18,7 @@ BlogController.prototype = {
         else {
             return this._loadPageAndCompile(
                 {
-                    pagePath: './public/partials/index.html',
-                    pageTitle: 'Centaurea - Development and consulting company'
+                    pagePath: './public/partials/blog-post/'+this.requestData.queryString.name+'.html'
                 },
                 this._masterPath);
         }
@@ -39,6 +38,7 @@ BlogController.prototype = {
 
         return masterTemplate.render(model);
     }
+
 };
 
-module.exports = BlogController;
+//module.exports = BlogController;

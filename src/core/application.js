@@ -22,10 +22,18 @@ var Application = function(configPath){
         try {
             return that.handleRequest.call(that, request, response)
         }catch(exception){
-            process.stdout.write("Request to: " + request.url + '\n');
-            process.stdout.write(exception + '\n');
-            response.writeHead(500, {"Content-Type": "text/html"});
-            response.end("Server error occurred. We already fixing it.");
+            if (exception.message.indexOf("Couldn't find") != -1){
+                response.writeHead(302, {
+                    'Location': '/error/page-not-found'
+                });
+                response.end();
+            }
+            else{
+                process.stdout.write("Request to: " + request.url + '\n');
+                process.stdout.write(exception + '\n');
+                response.writeHead(500, {"Content-Type": "text/html"});
+                response.end("Server error occurred. We already fixing it.");
+            }
         }
     });
     this.fileServer = new FileServer('.');

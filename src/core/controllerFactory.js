@@ -1,5 +1,6 @@
 var CodeLoader = require('./../infrastructure/codeLoader');
 var _ = require('./../infrastructure/jsUtilHelper');
+var ErrorInvoker = require('./errors');
 
 var ControllerMetadata = (function(){
 
@@ -63,12 +64,14 @@ var ControllerFactory = function(settings){
 };
 
 ControllerFactory.prototype = {
-
     readControllerFromFile: function (name) {
-
-        this.controllers[name] = this.loader.loadController(name);
-        this.controllersMetadata[name] = new ControllerMetadata(this.controllers[name], name);
-
+        try {
+            this.controllers[name] = this.loader.loadController(name);
+            this.controllersMetadata[name] = new ControllerMetadata(this.controllers[name], name);
+        }
+        catch (exception){
+            throw ErrorInvoker.raiseNoMetadataForController(name);
+        }
     },
 
     getControllerInstance: function(name){

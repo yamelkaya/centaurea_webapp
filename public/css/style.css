@@ -8,6 +8,13 @@
     [ TYPHOGRAPY ]
 */
 
+/*ERROR PAGE*/
+#container section.error-page{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 /*DEVELOPMENT PAGE*/
 #software-design-and-development .solutions{
     padding-left: 0px;
@@ -630,8 +637,8 @@ footer .contact{
 .portfolio .portfolio-item {
     opacity: 0;
     display: none;
-    margin: 0;
-    padding: 3px;
+    padding: 2px !important;
+    margin: 0px;
 }
 .portfolio .portfolio-item img {
     width: 100%;
@@ -794,8 +801,8 @@ footer .contact{
     padding: 0 15px;
 }
 
-.clients .client-logo{
-    padding: 1px;
+.clients div.client-logo{
+    padding: 1px !important;
 }
 
 .clients .client-logo span{
@@ -1343,6 +1350,7 @@ h4.clients,h2.clients,h3.clients{
 /* ====== WIDGET ====== */
 .widgetbar .widget {
     margin-bottom: 30px;
+    margin-left: 15px !important;
 }
 .widgetbar .widget ul {
     padding-left: 0;
@@ -1864,11 +1872,11 @@ form .form-control:focus, form textarea:focus {
 
 /* columns of same height styles */
 .row{
-    margin-right: 0px !important;
+    margin-right: 0px;
 }
 
 .row [class*='col-']{
-    padding-right: 0px !important;
+    padding-right: 0px;
 }
 
 .container-xs-height {

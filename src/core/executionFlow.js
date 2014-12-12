@@ -86,7 +86,13 @@ ExecutionFlow.buildControllerFlow = function(resolver, filters, controllerMetada
     addToFlow(controllerMetadata.attr);
 
     var actionMetadata = controllerMetadata.actionsData[uriData.action];
-    addToFlow(actionMetadata.attr);
+
+    if (actionMetadata){
+        addToFlow(actionMetadata.attr);
+    }
+    else {
+        er.raiseNoMetadataForAction(uriData.action);
+    }
 
     var ctrlInstance = new controllerMetadata.controller();
     ctrlInstance.requestData = uriData;
