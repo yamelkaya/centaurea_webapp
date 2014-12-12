@@ -2,20 +2,109 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7933ea5c-864d-4cf7-92a4-cf7155fc73e7" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\main-slide-images\centaurea_main-10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\main-slide-images\centaurea_main-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\main-slide-images\centaurea_main-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\main-slide-images\centaurea_main-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\main-slide-images\centaurea_main-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\main-slide-images\centaurea_main-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\main-slide-images\centaurea_main-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\main-slide-images\centaurea_main-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\main-slide-images\centaurea_main-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\7_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\centaurea\9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cloud_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cloud_1_600.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cloud_1_600.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cloud_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cloud_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\consulting.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\consulting\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\consulting\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\consulting\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\corporate-trainings\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\corporate-trainings\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\corporate-trainings\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\corporate-trainings\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\corporate-trainings\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\corporate-trainings\5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\corporate-trainings\5_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\corporate_trainings.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cto-as-a-service\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cto-as-a-service\12.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cto-as-a-service\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cto-as-a-service\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cto-as-a-service\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cto-as-a-service\5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cto-as-a-service\6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cto-as-a-service\7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\cto-as-a-service\8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\dedicated-team\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\dedicated-team\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\dedicated-team\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\dedicated-team\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\dedicated-team\5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\dedicated-team\6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\dedictated_team.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\design_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\design_1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\design_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\design_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\design_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\design_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\design_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\design_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\design_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\development\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\development\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\development\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\development\Fotolia_65363963_M.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\development_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\managed-services\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\managed-services\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\managed-services\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\managed-services\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\managed-services\5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\managed-services\6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\managed_services.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\mongodb\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\test_slide_images\mongodb\2.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/services/development.html" afterPath="$PROJECT_DIR$/public/partials/services/development.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index - Copy.html" afterPath="$PROJECT_DIR$/public/index - Copy.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/index.html" afterPath="$PROJECT_DIR$/public/partials/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/master/master-with-contact-footer.html" afterPath="$PROJECT_DIR$/public/master/master-with-contact-footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/services/mongodb-as-a-service.html" afterPath="$PROJECT_DIR$/public/partials/services/mongodb-as-a-service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-1.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-mongodb-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-10.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-java-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-11.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-javascript-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-12.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-jquery-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-13.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-ruby-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-14.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-python-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-15.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-aws-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-16.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-msazure-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-17.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-redis-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-18.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-sitecore-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-19.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-dynamodb-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-2.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-cassandra-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-20.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-couchbase-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-21.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-apache-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-22.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-apachestorm-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-23.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-rebbitmq-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-24.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-apachekafka-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-25.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-zeromq-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-26.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-lucene-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-27.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-apachespark-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-28.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-salesforce-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-3.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-angularjs-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-4.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-couchdb-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-5.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-nodejs-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-6.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-elasticsearch-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-7.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-hadoop-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-8.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-msdynamics-logo.jpg" />
+      <change type="MOVED" beforePath="D:\_Projects\git\centaurea_webapp\public\images\portfolio-thumb-9.jpg" afterPath="$PROJECT_DIR$/public/images/technologies/tech-csharp-net-logo.jpg" />
     </list>
     <ignored path="centaurea_webapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,53 +128,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2091">
-              <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-              <folding />
-            </state>
+      <file leaf-file-name="tech-couchbase-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-couchbase-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="executionFlow.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/executionFlow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1474" max-vertical-offset="2516">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="tech-apache-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-apache-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/master/master.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3461537" vertical-offset="268" max-vertical-offset="2431">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="29" selection-end-column="78" />
-              <folding />
-            </state>
+      <file leaf-file-name="tech-apachestorm-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-apachestorm-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page-not-found.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/page-not-found.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="255">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/partials/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.923077" vertical-offset="7385" max-vertical-offset="7667">
-              <caret line="664" column="20" selection-start-line="664" selection-start-column="20" selection-end-line="664" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.5864979" vertical-offset="2224" max-vertical-offset="10115">
+              <caret line="139" column="246" selection-start-line="139" selection-start-column="39" selection-end-line="139" selection-end-column="246" />
               <folding>
-                <element signature="n#section#2;n#!!top" expanded="false" />
                 <element signature="n#section#3;n#!!top" expanded="false" />
                 <element signature="n#section#5;n#!!top" expanded="false" />
               </folding>
@@ -93,62 +162,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master-with-contact-footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/master/master-with-contact-footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693" vertical-offset="102" max-vertical-offset="2380">
-              <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
-              <folding />
-            </state>
+      <file leaf-file-name="tech-rebbitmq-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-rebbitmq-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controllers/homeController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84166664" vertical-offset="87" max-vertical-offset="646">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-              <folding />
-            </state>
+      <file leaf-file-name="tech-apachekafka-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-apachekafka-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.535714" vertical-offset="2095" max-vertical-offset="33201">
-              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="tech-zeromq-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-zeromq-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="318" max-vertical-offset="2091">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-              <folding>
-                <element signature="e#2290#2413#0" expanded="false" />
-                <element signature="e#2452#2836#0" expanded="false" />
-              </folding>
-            </state>
+      <file leaf-file-name="tech-lucene-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-lucene-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mongodb-as-a-service.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/services/mongodb-as-a-service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1923077" vertical-offset="155" max-vertical-offset="1887">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-              <folding />
-            </state>
+      <file leaf-file-name="tech-apachespark-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-apachespark-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tech-salesforce-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-salesforce-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsGruntFileManager">
@@ -394,7 +453,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -423,11 +482,11 @@
       <recent name="D:\_Projects\git\centaurea_webapp\public\services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_Projects\git\centaurea_webapp\public\images\technologies" />
       <recent name="D:\_Projects\git\centaurea_webapp\public\partials\blog-post" />
       <recent name="D:\_Projects\git\centaurea_webapp\public\partials" />
       <recent name="D:\_Projects\git\centaurea_webapp\public\partials\technologies" />
       <recent name="D:\_Projects\git\centaurea_webapp\public\partials\services" />
-      <recent name="D:\_Projects\git\centaurea_webapp\public\master" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
@@ -519,10 +578,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.681431" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54344124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48211244" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40545145" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -596,208 +655,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/partials/technologies/mongodb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/lib/nivo-themes/default/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="2575">
-          <caret line="13" column="94" selection-start-line="13" selection-start-column="94" selection-end-line="13" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shortcodes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.558824" vertical-offset="141" max-vertical-offset="40425">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="59266" max-vertical-offset="144775">
-          <caret line="2378" column="12" selection-start-line="2378" selection-start-column="12" selection-end-line="2378" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/lib/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/html_old/blog - Copy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.294118" vertical-offset="68" max-vertical-offset="9750">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/html_old/blog-post - Copy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.294118" vertical-offset="68" max-vertical-offset="12050">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery-1.10.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="169368" max-vertical-offset="244575">
-          <caret line="6798" column="77" selection-start-line="6798" selection-start-column="77" selection-end-line="6798" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="325">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="510">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="204">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/services/consulting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1566265" vertical-offset="57" max-vertical-offset="442">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/services/corporate-trainings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="374">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/services/cto-as-a-service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="391">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/services/dedicated-team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6153846" vertical-offset="108" max-vertical-offset="510">
-          <caret line="18" column="79" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/services/managed-services.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="323">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3046" max-vertical-offset="3536">
-          <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/icon-map.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5746">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index - Copy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8075" max-vertical-offset="14926">
-          <caret line="498" column="52" selection-start-line="498" selection-start-column="45" selection-end-line="498" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
-          <caret line="6" column="8910" selection-start-line="6" selection-start-column="8910" selection-end-line="6" selection-end-column="8928" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/lib/responsiveslides/themes.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3655">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/lib/responsiveslides/responsiveslides.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="697">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3891754" vertical-offset="2091" max-vertical-offset="14569">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/technologiesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="731">
-          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/master/master-technologies.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374">
@@ -812,11 +669,6 @@
           <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/portfolio-thumb-5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/blogController.js">
@@ -945,18 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.923077" vertical-offset="7385" max-vertical-offset="7667">
-          <caret line="664" column="20" selection-start-line="664" selection-start-column="20" selection-end-line="664" selection-end-column="20" />
-          <folding>
-            <element signature="n#section#2;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#!!top" expanded="false" />
-            <element signature="n#section#5;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="2091">
@@ -983,9 +823,165 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/homeController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84166664" vertical-offset="87" max-vertical-offset="646">
+        <state vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="646">
           <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/logo1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-mongodb-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-cassandra-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-angularjs-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-couchdb-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-nodejs-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-elasticsearch-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-hadoop-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-msdynamics-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-csharp-net-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-java-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-javascript-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-jquery-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-ruby-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-python-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-aws-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-msazure-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-redis-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-sitecore-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-dynamodb-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-couchbase-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-apache-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-apachestorm-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-rebbitmq-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-apachekafka-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-zeromq-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-lucene-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-apachespark-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/technologies/tech-salesforce-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5864979" vertical-offset="2224" max-vertical-offset="10115">
+          <caret line="139" column="246" selection-start-line="139" selection-start-column="39" selection-end-line="139" selection-end-column="246" />
+          <folding>
+            <element signature="n#section#3;n#!!top" expanded="false" />
+            <element signature="n#section#5;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
