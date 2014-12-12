@@ -132,6 +132,16 @@ iframe{
     border:none;
     outline: 0;
 }
+
+th,td{
+    padding: 10px 50px 10px 10px;
+}
+
+tbody tr:nth-child(odd){
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
 .header-content {
     margin-bottom: 40px;
     color: #FFF;
