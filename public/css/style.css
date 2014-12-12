@@ -15,6 +15,10 @@
     padding-bottom: 80px;
 }
 
+#container section.error-page p{
+    font-size: 40px;
+}
+
 /*DEVELOPMENT PAGE*/
 #software-design-and-development .solutions{
     padding-left: 0px;
@@ -135,12 +139,30 @@ iframe{
 
 th,td{
     padding: 10px 50px 10px 10px;
+    text-align: center;
+}
+
+th {
+    border: 1px solid;
+}
+
+td{
+    border-right: 1px solid ;
+}
+
+td:last-child{
+    border-right: 0px;
 }
 
 tbody tr:nth-child(odd){
     background: rgba(255, 255, 255, 0.2);
 }
 
+table{
+    width: 100%;
+    border: 1px solid;
+    font-size: 16px;
+}
 
 .header-content {
     margin-bottom: 40px;
