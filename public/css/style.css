@@ -77,6 +77,17 @@ ul#slides li{
 /**/
 
 
+.beta-service::after{
+    content: "Beta";
+    border: 1px solid;
+    font-size: small;
+    font-weight: 300;
+    position: absolute;
+    margin-left: 5px;
+    border-radius: 6px;
+    padding: 3px 5px;
+    color: rgb(31, 130, 255);
+}
 
 .btn-contact a{
     background: transparent;
@@ -169,7 +180,8 @@ table{
     color: #FFF;
     text-align: left;
 }
-.header-content h2 {
+.header-content h2,
+.header-content h1{
     font-weight: 600;
     font-size: 40px;
 }
@@ -624,6 +636,7 @@ footer .contact{
     margin-bottom: 20px;
     /*color:#1f82ff;*/
     font-weight: 400;
+    min-width: 136px;
 }
 .services .service-items .desc {
     padding-right: 30px;
