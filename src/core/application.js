@@ -120,8 +120,16 @@ Application.prototype = {
     },
 
     _sendResponse: function(response){
-        response.writeHead(200, {"Content-Type": "text/html"});
-        response.end(response.executionFlowResult[0]);
+        if(response.executionFlowResult[0] !== 'redirect-success'){
+            response.writeHead(200, {"Content-Type": "text/html"});
+            response.end(response.executionFlowResult[0]);
+        }else{
+            response.writeHead(302, {
+                'Location': '/home/contact-success'
+            });
+            response.end();
+        }
+
     }
 
 };
