@@ -10,7 +10,12 @@ HomeController.prototype = {
         return this._loadPageAndCompile(
             {
                 pagePath: './public/partials/index.html',
-                pageTitle: 'Centaurea - Development and consulting company'
+                pageTitle: 'Centaurea - Software Development, IT Consulting, Managed Services',
+                pageDescription: 'Centaureа is a software development and consulting company ' +
+                'that specialized in construction of high-load, scalable, distributed and Big Data processing systems.',
+                pageKeywords: 'solution development, software development, application development, cloud solutions' +
+                'it consulting, technology consulting, database consulting, mongodb consulting, big data consulting, cloud consulting'+
+                'corporate training, it training, dedicated team, managed service, virtual cto'
             },
             this._masterPath);
     },

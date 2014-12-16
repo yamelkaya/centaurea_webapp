@@ -8,6 +8,17 @@
     [ TYPHOGRAPY ]
 */
 
+/*ERROR PAGE*/
+#container section.error-page{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#container section.error-page p{
+    font-size: 40px;
+}
+
 /*DEVELOPMENT PAGE*/
 #software-design-and-development .solutions{
     padding-left: 0px;
@@ -66,6 +77,18 @@ ul#slides li{
 /**/
 
 
+.beta-service::after{
+    content: "Beta";
+    border: 1px solid;
+    font-size: small;
+    font-weight: 300;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 3px;
+    border-radius: 6px;
+    padding: 3px 5px;
+    color: rgb(31, 130, 255);
+}
 
 .btn-contact a{
     background: transparent;
@@ -125,12 +148,41 @@ iframe{
     border:none;
     outline: 0;
 }
+
+th,td{
+    padding: 10px 50px 10px 10px;
+    text-align: center;
+}
+
+th {
+    border: 1px solid;
+}
+
+td{
+    border-right: 1px solid ;
+}
+
+td:last-child{
+    border-right: 0px;
+}
+
+tbody tr:nth-child(odd){
+    background: rgba(255, 255, 255, 0.2);
+}
+
+table{
+    width: 100%;
+    border: 1px solid;
+    font-size: 16px;
+}
+
 .header-content {
     margin-bottom: 40px;
     color: #FFF;
     text-align: left;
 }
-.header-content h2 {
+.header-content h2,
+.header-content h1{
     font-weight: 600;
     font-size: 40px;
 }
@@ -585,6 +637,7 @@ footer .contact{
     margin-bottom: 20px;
     /*color:#1f82ff;*/
     font-weight: 400;
+    min-width: 136px;
 }
 .services .service-items .desc {
     padding-right: 30px;
@@ -630,8 +683,8 @@ footer .contact{
 .portfolio .portfolio-item {
     opacity: 0;
     display: none;
-    margin: 0;
-    padding: 3px;
+    padding: 2px !important;
+    margin: 0px;
 }
 .portfolio .portfolio-item img {
     width: 100%;
@@ -794,8 +847,8 @@ footer .contact{
     padding: 0 15px;
 }
 
-.clients .client-logo{
-    padding: 1px;
+.clients div.client-logo{
+    padding: 1px !important;
 }
 
 .clients .client-logo span{
@@ -1343,6 +1396,7 @@ h4.clients,h2.clients,h3.clients{
 /* ====== WIDGET ====== */
 .widgetbar .widget {
     margin-bottom: 30px;
+    margin-left: 15px !important;
 }
 .widgetbar .widget ul {
     padding-left: 0;
@@ -1864,11 +1918,11 @@ form .form-control:focus, form textarea:focus {
 
 /* columns of same height styles */
 .row{
-    margin-right: 0px !important;
+    margin-right: 0px;
 }
 
-.row .col-*{
-    padding-right: 0px !important;
+.row [class*='col-']{
+    padding-right: 0px;
 }
 
 .container-xs-height {
