@@ -4,8 +4,12 @@ dp(document).ready(function() {
     //SET ACTIVE MENU ITEM
     dp('.navbar-nav li a').each(function(index, item){
            item = dp(item);
-           if (window.location.pathname.indexOf(item.text().toLowerCase())!= -1 ||
-               window.location.pathname == '/' && item.text().toLowerCase() == 'home'){
+            var itemText = item.text().toLowerCase();
+        if (
+            (window.location.pathname.indexOf(itemText) != -1 &&
+            (itemText == 'home' || itemText == 'services')) ||
+            (window.location.pathname == '/' && item.text().toLowerCase() == 'home'))
+           {
                item.parent().addClass('active');
            }
            else {

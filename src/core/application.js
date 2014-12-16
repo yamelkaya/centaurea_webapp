@@ -125,7 +125,7 @@ Application.prototype = {
             response.end(response.executionFlowResult[0]);
         }else{
             response.writeHead(302, {
-                'Location': '/home/contact-success'
+                'Location': '/contact/thank-you'
             });
             response.end();
         }
