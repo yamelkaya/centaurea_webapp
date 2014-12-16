@@ -21,50 +21,6 @@ HomeController.prototype = {
             this._masterPath);
     },
 
-    email: function(){
-
-        var transporter = nodemailer.createTransport({
-            service: 'Gmail',
-            auth: {
-                user: 'hoboutdev@gmail.com',
-                pass: process.env.MAIL_PWD
-            }
-        });
-
-        var from = this.requestData.queryString.useremail;
-        var subject = this.requestData.queryString.mailsubject;
-        var text = this.requestData.queryString.messsagebody;
-
-        var mailOptions = {
-            to: 'contact@centaurea.io',
-            subject: subject,
-            text: "email from: " + from + '\n' + text
-        };
-
-        transporter.sendMail(mailOptions, function(error, info){
-            if(error){
-
-                process.stdout.write("Exception occurred when sending email with options: \n");
-                process.stdout.write(mailOptions + '\n');
-                process.stdout.write(error.toString() + '\n');
-
-            }else{
-                console.log('Message sent: ' + info.response + '\n');
-            }
-        });
-
-        return "redirect-success";
-
-    },
-
-    "contact-thankyou": function () {
-        return this._loadPageAndCompile(
-            {
-                pagePath: './public/partials/contact-success.html',
-                pageTitle: 'Thanks for contacting us!'
-            },
-            this._masterWithContactPath);
-    },
 
     _masterPath : './public/master/master.html',
     _masterWithContactPath: './public/master/master-with-contact-footer.html',

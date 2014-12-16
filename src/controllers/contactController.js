@@ -6,7 +6,6 @@ var ContactController = function (){
 };
 
 ContactController.prototype = {
-
     email: function(){
 
         var transporter = nodemailer.createTransport({

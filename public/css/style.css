@@ -42,7 +42,12 @@
 
 /*SERVICES PAGES TEMPLATE*/
 #container section.services-container{
-    padding-top: 40px;
+    padding-top: 44px;
+}
+
+#container section.services-container .service-image{
+    margin: 0 -60px;
+    overflow: hidden;
 }
 
 /*SERVICES ITEMS*/

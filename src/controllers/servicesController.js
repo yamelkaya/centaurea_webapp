@@ -24,7 +24,7 @@ ServicesController.prototype = {
                 pageDescription: 'Centaurea is ready to share and help you in making use of different technologies and' +
                 ' building agile and scalable systems.',
                 pageKeywords: 'database consulting, big data consulting, cloud consulting, centaurea consulting, centaurea consulting services, ' +
-                'data consulting, data consulting services, database consulting, database consulting services, technology consulting'
+                'data consulting, data consulting services, database consulting, database consulting services, mongodb consulting, technology consulting'
             },this._masterPath);
     },
 
