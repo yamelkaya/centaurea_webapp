@@ -109,12 +109,6 @@ dp(document).ready(function() {
 
     //Bootstrap Tooltip
     dp('a[data-toggle="tooltip"]').tooltip();
-    //NIVOLightbox
-    if (dp.fn.nivoLightbox) {
-        dp('.popup').nivoLightbox({
-            effect: 'fall'
-        });
-    }
 });
 dp(window).load(function() {
     dp('#loader').fadeOut(1000, "linear");
