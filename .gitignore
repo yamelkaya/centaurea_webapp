@@ -17,4 +17,5 @@ node_modules
 libs
 
 .idea
+public/*.gz
 

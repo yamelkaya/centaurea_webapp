@@ -90,7 +90,7 @@ Application.prototype = {
                 response.writeHead(404, {"Content-Type": "text/html"});
                 response.end("Content not found");
                 //throw new Error(err);
-            });
+            })
 
         }else{
 
