@@ -36,7 +36,7 @@ var Application = function(configPath){
             }
         }
     });
-    this.fileServer = new FileServer('.');
+    this.fileServer = new FileServer('.',{gzip: true});
     this.controllerFactory = new ControllerFactory(this.settings);
     this.dependencyResolver = new DependencyResolver();
     this._initFilters();
