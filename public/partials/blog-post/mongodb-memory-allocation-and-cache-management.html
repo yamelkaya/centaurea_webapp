@@ -1,0 +1,145 @@
+<section id="blog" class="blog">
+    <div class="row">
+        <div class="col-md-9">
+            <div id="primary" class="row">
+                <div class="col-md-12">
+                    <!-- BEGIN ARTICLE -->
+                    <article class="post">
+                        <h1>Introduction to MongoDB memory allocation and cache management
+                        </h1>
+                        <div class="post-meta">
+                            <span class="author">Centaurea</span>
+                            <span class="dates">18 December 2014</span>
+                        </div>
+                        <div class="post-content">
+                            <p>In this article described some details of memory allocation by MongoDB.</p>
+                            <p>
+                                MongoDB uses memory mapped files for file management, so in this component it relies a
+                                lot on OS side. But let’s look at it based on linux OS. MongoDB maps files into memory
+                                using standard <i>mmap</i> call from <i>glibc</i>.</p>
+                            <h3>How it works</h3>
+                            <p>
+                                On start, MongoDB maps all its data storage files into memory. RAM is not used at all,
+                                this process only reserves the address space. This is reflected as virtual memory usage
+                                by mongod process. They can be found either in <i>top (VIRT)</i> or in MongoDB monitor
+                                (Memory Virt). Basically they reflect the data + indexes size. Res/RSS memory usage
+                                doesn't reflect anything relevant at all.</p>
+                            <p>
+                                So in a sense all data and indexes are in memory, split by small memory pages. MongoDB
+                                has pointers to each page. But they are not in RAM yet.
+                            </p>
+                            <p>
+                                Now when an actual query is made, MongoDB finds the page that contains the required data
+                                and reads that data. It reads it from memory in general, and it doesn't care if the data
+                                is in RAM or not. It can't know that, it just sends the request to the address in memory.
+                            </p>
+                            <p>
+                                The rest is up to OS. It initializes those pages in RAM on their first usage. Such
+                                initialized pages are known as cache pages, their total size can be seen with the
+                                command <i>'free'</i> (column 'cached'). The problem is that OS expires them after
+                                some time. This expiration is inevitable no matter how much RAM is available. It is an
+                                OS-wide process based on recency of usage. There is a <i>kswapd</i> process that runs periodically
+                                and checks whether the page has been accessed since the previous run. If it has, it does
+                                nothing. If it hasn't, it divides the age by two. When the age reaches zero, this page
+                                becomes a candidate for eviction. (Well, it never becomes zero, probably just close to it
+                                enough, I don't know exact math behind it).
+                            </p>
+                            <p>This mechanism, file mmap'ing, is used for every file in the system. Log files are mmap'ed
+                                as well, so the more logs, the more RAM used by cache pages.</p>
+                            <p>
+                                There is some dependency on RAM usage: the higher is the 'active' RAM usage (see <i>vmstat -s</i>),
+                                the more frequently <i>kswapd</i> runs and the faster is the aging process.
+                                MongoDB reports the actual size of data in RAM and the maximal age of that data. So we
+                                could see that in case of memory management mongodb are pretty much rely on the OS side
+                                and this could caused some downside effects like cache expiration and purging of data from
+                                RAM just because OS think that data should be expired already.
+                            </p>
+
+                            <p>Cassandra uses the same mmap thing BTW.</p>
+
+                            <p><a href="/">Centaurea's</a> team has a great experience with MongoDB and we are ready to offer you
+                                a range of concerning services: MongoDB <a href="services/software-development">development</a>, <a href="/services/it-consulting">consulting</a>,
+                                <a href="/services">MongoDB as a service</a>. You can rely on our MongoDB experts and trust your data them!
+                            </p>
+                        </div>
+                    </article>
+                    <!-- END ARTICLE -->
+                </div>
+                <!-- BLOG AUTHOR -->
+                <div class="col-md-12">
+                    <div class="blog-author">
+                        <h3>Blog Author</h3>
+                        <div class="media">
+                            <figure class="pull-left">
+                                <img class="media-object" src="/public/images/flower_on_bg_medium.png" alt="Author">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="/">Centaurea</a>
+                                </h4>
+                                <p>
+                                    Software development and consulting company that
+                                    focused on high-load, scalable and Big Data processing systems and  offers wide
+                                    range of services. <a href="/#contact">Contact us</a> if you need any help.
+                                    <br>
+                                    <br>
+                                    Follow us in social networks:
+                                    <br>
+                                    <a href="https://www.facebook.com/pages/Centaurea/418710821619782" class="zocial icon facebook">Facebook</a>
+                                    <a href="http://plus.google.com/109684722430495144544" class="zocial icon googleplus">Google+</a>
+                                    <a href="https://twitter.com/centaurea_io" class="zocial icon twitter">Twitter</a>
+                                    <a href="https://www.linkedin.com/company/centaurea-software" class="zocial icon linkedin">LinkedIn</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 widgetbar">
+            <!-- /widget -->
+
+            <div class="row widget">
+                <div class="col-md-12">
+                    <div class="categories-widget">
+                        <h3 class="widget-title">
+                            Categories
+                        </h3>
+                        <ul>
+                            <li>
+                                MongoDB
+                            </li>
+                            <li>
+                                Memory allocation
+                            </li>
+                            <li>
+                                NoSQL databases
+                            </li>
+                            <li>
+                                Database optimization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /widget -->
+
+            <div class="row widget">
+                <div class="col-md-12">
+                    <div class="popular-post-widget">
+                        <h3 class="widget-title">
+                            Other Post
+                        </h3>
+                        <ul>
+                            <li>
+                                <a class="inverted" href="/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations">Introduction to MongoDB indexing: How MongoDB indexes depend on memory and I/O operations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /widget -->
+            <!-- /widget -->
+            <!-- /widget -->
+        </div>
+    </div>
+</section>

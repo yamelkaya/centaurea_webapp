@@ -11,7 +11,7 @@
                         </p>
                         <div class="post-meta">
                             <span class="author">Centaurea</span>
-                            <span class="dates">18 December</span>
+                            <span class="dates">18 December 2014</span>
                         </div>
                         <div class="post-content">
                             <p>Mongodb designed to provide perfect read operations performance and oriented for read
@@ -26,31 +26,26 @@
                     <!-- END ARTICLE -->
                     <!-- BEGIN ARTICLE -->
                     <article class="post">
-                        <div class="post-thumb">
-                            <a href="blog-post/blog-post.html">
-                                <img src="/public/images/post-2.jpg" alt="Blog Post 2" />
-                            </a>
-                        </div>
-                        <div class="post-title">
-                            <h1><a href="blog-post/blog-post.html">Class aptent taciti sociosqu</a>
-                            </h1>
-                        </div>
+                        <p>
+                        <h1><a class="inverted" href="/blog?name=mongodb-memory-allocation-and-cache-management">Introduction to MongoDB memory allocation and cache management</a></h1>
+                        </p>
                         <div class="post-meta">
-                            <span class="author">Develpixel</span>
-                            <span class="dates">15 October 2013</span>
-                                        <span class="comments-count"><a href="blog-post/blog-post.html">No Comment</a>
-                                        </span>
+                            <span class="author">Centaurea</span>
+                            <span class="dates">18 December 2014</span>
                         </div>
                         <div class="post-content">
-                            <p>Etiam feugiat imperdiet rhoncus. Sed suscipit bibendum enim, sed volutpat tortor malesuada non. Morbi fringilla dui non purus porttitor mattis. Suspendisse quis vulputate risus. Phasellus erat velit, sagittis sed varius volutpat, placerat nec urna. Nam eu metus vitae dolor fringilla feugiat. Nulla facilisi. Etiam enim metus, luctus in adipiscing at, consectetur quis sapien. Duis imperdiet egestas.</p>
-                            <p>
-                                Sed euismod, mauris a lobortis laoreet, neque nunc suscipit orci, id ultrices nulla enim ac orci. Proin a erat at mi ornare interdum. Donec sagittis, felis at rutrum egestas, orci risus laoreet diam, quis pulvinar sapien neque id mauris. Suspendisse potenti. Pellentesque eget ligula ut lacus porttitor pharetra et a mauris. Cras varius gravida aliquet. Mauris luctus, nibh eu aliquam gravida, sem nunc vestibulum.
-                            </p>
-                            <p>
-                                Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum [...]
-                            </p>
+                            <p>MongoDB uses memory mapped files for file management, so in this component it relies a
+                            lot on OS side. But let’s look at it based on linux OS. MongoDB maps files into memory
+                            using standard <i>mmap</i> call from <i>glibc</i>
+                            <p>How it works.
+                                On start, MongoDB maps all its data storage files into memory. RAM is not used at all,
+                                this process only reserves the address space. This is reflected as virtual memory usage
+                                by mongod process. They can be found either in <i>top (VIRT)</i> or in MongoDB monitor
+                                (Memory Virt). Basically they reflect the data + indexes size. Res/RSS memory usage
+                                doesn't reflect anything relevant at all
+                                <a href="/blog?name=mongodb-memory-allocation-and-cache-management">[...]</a> </p>
                             <br/>
-                            <a class="btn btn-dark medium" href="blog-post/blog-post.html">Read More</a>
+                            <a class="btn btn-dark medium" href="/blog?name=mongodb-memory-allocation-and-cache-management">Read More</a>
                         </div>
                     </article>
                     <!-- END ARTICLE -->
@@ -84,24 +79,6 @@
                 </div>
             </div>
             <!-- /widget -->
-
-            <div class="row widget">
-                <div class="col-md-12">
-                    <div class="popular-post-widget">
-                        <h3 class="widget-title">
-                            Other Post
-                        </h3>
-                        <ul>
-                            <li>
-                                <a href="javascript:;">Plunker hypanthial unagricultura</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">Unstaffed intertransformability</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>

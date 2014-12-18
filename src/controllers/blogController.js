@@ -42,7 +42,8 @@ BlogController.prototype = {
     },
 
     _pageTitles : {
-        'how-mongodb-indexes-depends-on-ram-and-io-operations': 'Introduction to MongoDB indexing: How MongoDB indexes depend on memory and I/O operations'
+        'how-mongodb-indexes-depends-on-ram-and-io-operations': 'Introduction to MongoDB indexing: How MongoDB indexes depend on memory and I/O operations',
+        'mongodb-memory-allocation-and-cache-management': 'Introduction to MongoDB memory allocation and cache management'
     }
 };
 
