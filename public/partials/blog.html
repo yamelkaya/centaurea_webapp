@@ -6,31 +6,21 @@
                 <div class="col-md-12">
                     <!-- BEGIN ARTICLE -->
                     <article class="post">
-                        <div class="post-thumb">
-                            <a href="blog-post/blog-post.html">
-                                <img src="/public/images/post-1.jpg" alt="Blog Post 1" />
-                            </a>
-                        </div>
-                        <div class="post-title">
-                            <h1><a href="blog-post/blog-post.html">Class aptent taciti sociosqu</a>
-                            </h1>
-                        </div>
+                        <p>
+                        <h1><a class="inverted" href="/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations">Introduction to MongoDB indexing: How MongoDB indexes depend on memory and I/O operations</a></h1>
+                        </p>
                         <div class="post-meta">
-                            <span class="author">Develpixel</span>
-                            <span class="dates">15 October 2013</span>
-                                        <span class="comments-count"><a href="blog-post/blog-post.html">No Comment</a>
-                                        </span>
+                            <span class="author">Centaurea</span>
+                            <span class="dates">18 December</span>
                         </div>
                         <div class="post-content">
-                            <p>Etiam feugiat imperdiet rhoncus. Sed suscipit bibendum enim, sed volutpat tortor malesuada non. Morbi fringilla dui non purus porttitor mattis. Suspendisse quis vulputate risus. Phasellus erat velit, sagittis sed varius volutpat, placerat nec urna. Nam eu metus vitae dolor fringilla feugiat. Nulla facilisi. Etiam enim metus, luctus in adipiscing at, consectetur quis sapien. Duis imperdiet egestas.</p>
-                            <p>
-                                Sed euismod, mauris a lobortis laoreet, neque nunc suscipit orci, id ultrices nulla enim ac orci. Proin a erat at mi ornare interdum. Donec sagittis, felis at rutrum egestas, orci risus laoreet diam, quis pulvinar sapien neque id mauris. Suspendisse potenti. Pellentesque eget ligula ut lacus porttitor pharetra et a mauris. Cras varius gravida aliquet. Mauris luctus, nibh eu aliquam gravida, sem nunc vestibulum.
-                            </p>
-                            <p>
-                                Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum [...]
-                            </p>
+                            <p>Mongodb designed to provide perfect read operations performance and oriented for read
+                                access as much as it possible.  And main source to achieve this results is indexing.
+                                So when you query any data or making any aggregation mongodb try to utilize indexes as
+                                much as it possible, nevermind is it a simple queries or complex aggregation pipelines
+                                (that’s why proper compound indexes could massively improve aggregation queries) <a href="/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations">[...]</a> </p>
                             <br/>
-                            <a class="btn btn-dark medium" href="blog-post/blog-post.html">Read More</a>
+                            <a class="btn btn-dark medium" href="/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations">Read More</a>
                         </div>
                     </article>
                     <!-- END ARTICLE -->
@@ -64,52 +54,6 @@
                         </div>
                     </article>
                     <!-- END ARTICLE -->
-                    <!-- BEGIN ARTICLE -->
-                    <article class="post">
-                        <div class="post-thumb">
-                            <a href="blog-post/blog-post.html">
-                                <img src="/public/images/post-3.jpg" alt="Blog Post 3" />
-                            </a>
-                        </div>
-                        <div class="post-title">
-                            <h1><a href="blog-post/blog-post.html">Class aptent taciti sociosqu</a>
-                            </h1>
-                        </div>
-                        <div class="post-meta">
-                            <span class="author">Develpixel</span>
-                            <span class="dates">15 October 2013</span>
-                                        <span class="comments-count"><a href="blog-post/blog-post.html">No Comment</a>
-                                        </span>
-                        </div>
-                        <div class="post-content">
-                            <p>Etiam feugiat imperdiet rhoncus. Sed suscipit bibendum enim, sed volutpat tortor malesuada non. Morbi fringilla dui non purus porttitor mattis. Suspendisse quis vulputate risus. Phasellus erat velit, sagittis sed varius volutpat, placerat nec urna. Nam eu metus vitae dolor fringilla feugiat. Nulla facilisi. Etiam enim metus, luctus in adipiscing at, consectetur quis sapien. Duis imperdiet egestas.</p>
-                            <p>
-                                Sed euismod, mauris a lobortis laoreet, neque nunc suscipit orci, id ultrices nulla enim ac orci. Proin a erat at mi ornare interdum. Donec sagittis, felis at rutrum egestas, orci risus laoreet diam, quis pulvinar sapien neque id mauris. Suspendisse potenti. Pellentesque eget ligula ut lacus porttitor pharetra et a mauris. Cras varius gravida aliquet. Mauris luctus, nibh eu aliquam gravida, sem nunc vestibulum.
-                            </p>
-                            <p>
-                                Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum [...]
-                            </p>
-                            <br/>
-                            <a class="btn btn-dark medium" href="blog-post/blog-post.html">Read More</a>
-                        </div>
-                    </article>
-                    <!-- END ARTICLE -->
-                </div>
-                <div class="col-md-12">
-                    <ul class="pagination">
-                        <li><a href="javascript:;"><i class="fa fa-long-arrow-left"></i></a>
-                        </li>
-                        <li><a href="javascript:;">1</a>
-                        </li>
-                        <li class="active"><a href="javascript:;">2</a>
-                        </li>
-                        <li><a href="javascript:;">3</a>
-                        </li>
-                        <li><a href="javascript:;">4</a>
-                        </li>
-                        <li><a href="javascript:;"><i class="fa fa-long-arrow-right"></i></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -124,19 +68,16 @@
                         </h3>
                         <ul>
                             <li>
-                                <a href="javascript:;">CSS3 Tutorials</a> (5)
+                                MongoDB
                             </li>
                             <li>
-                                <a href="javascript:;">Web Design</a> (2)
+                                Database indexing
                             </li>
                             <li>
-                                <a href="javascript:;">Magazine</a> (5)
+                                NoSQL databases
                             </li>
                             <li>
-                                <a href="javascript:;">Icon Inspiration</a> (12)
-                            </li>
-                            <li>
-                                <a href="javascript:;">Fonts</a> (8)
+                                Database optimization
                             </li>
                         </ul>
                     </div>
@@ -148,7 +89,7 @@
                 <div class="col-md-12">
                     <div class="popular-post-widget">
                         <h3 class="widget-title">
-                            Popular Post
+                            Other Post
                         </h3>
                         <ul>
                             <li>
@@ -157,45 +98,10 @@
                             <li>
                                 <a href="javascript:;">Unstaffed intertransformability</a>
                             </li>
-                            <li>
-                                <a href="javascript:;">Tamatave squaller superwrought outsold equanimous</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">Submissiveness nasalized flagella</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">Ungrizzled lassitude</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <!-- /widget -->
-
-            <div class="row widget">
-                <div class="col-md-12">
-                    <div class="rss-widget">
-                        <h3 class="widget-title">
-                            <a href="javascritp:;">Connect with RSS <i class="fa fa-rss"></i></a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <!-- /widget -->
-
-            <div class="row widget">
-                <div class="col-md-12">
-                    <div class="ads-widget">
-                        <h3 class="widget-title">
-                            Ads Banner
-                        </h3>
-                        <a href="javascript:;">
-                            <img src="/public/images/ads336x280.png" alt="ads">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- /widget -->
 
         </div>
     </div>

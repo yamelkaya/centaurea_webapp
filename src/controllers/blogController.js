@@ -7,18 +7,20 @@ var BlogController = function (){
 BlogController.prototype = {
 
     index: function () {
-        if (!this.requestData.queryString.name){
+        var postName = this.requestData.queryString.name;
+        if (!postName){
             return this._loadPageAndCompile(
                 {
                     pagePath: './public/partials/blog.html',
-                    pageTitle: 'Centaurea - Development and consulting company'
+                    pageTitle: 'Centaurea Blog - MongoDB, Big Data, Cloud services, Apache Kafka'
                 },
                 this._masterPath);
         }
         else {
             return this._loadPageAndCompile(
                 {
-                    pagePath: './public/partials/blog-post/'+this.requestData.queryString.name+'.html'
+                    pagePath: './public/partials/blog-post/'+postName+'.html',
+                    pageTitle: this._pageTitles[postName]
                 },
                 this._masterPath);
         }
@@ -37,8 +39,11 @@ BlogController.prototype = {
         var masterTemplate = hogan.compile(master);
 
         return masterTemplate.render(model);
-    }
+    },
 
+    _pageTitles : {
+        'how-mongodb-indexes-depends-on-ram-and-io-operations': 'Introduction to MongoDB indexing: How MongoDB indexes depend on memory and I/O operations'
+    }
 };
 
-//module.exports = BlogController;
+module.exports = BlogController;

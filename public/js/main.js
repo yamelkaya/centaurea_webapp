@@ -6,8 +6,10 @@ dp(document).ready(function() {
            item = dp(item);
             var itemText = item.text().toLowerCase();
         if (
-            (window.location.pathname.indexOf(itemText) != -1 &&
-            (itemText == 'home' || itemText == 'services')) ||
+            (window.location.pathname.indexOf(itemText) != -1
+            //&&
+            //(itemText == 'home' || itemText == 'services')
+            ) ||
             (window.location.pathname == '/' && item.text().toLowerCase() == 'home'))
            {
                item.parent().addClass('active');

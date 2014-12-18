@@ -95,6 +95,10 @@ ul#slides li{
     color: rgb(31, 130, 255);
 }
 
+ol.list{
+    font-size: 16px;
+}
+
 .btn-contact a{
     background: transparent;
     color: #ffffff;
@@ -231,6 +235,12 @@ a {
 a:hover {
     color: #FFF;
     text-decoration: none;
+}
+a.inverted{
+    color: #ffffff;
+}
+a.inverted:hover{
+    color: #1f82ff;
 }
 #main-wrapper {
     width: 100%;
@@ -1165,6 +1175,11 @@ h4.clients,h2.clients,h3.clients{
 .widgetbar {
     padding-left: 0;
 }
+
+article.post:first-child{
+    margin-top: -20px;
+}
+
 .post {
     position: relative;
     margin-top: 60px;

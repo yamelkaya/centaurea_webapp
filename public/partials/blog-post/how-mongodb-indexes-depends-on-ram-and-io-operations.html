@@ -1,0 +1,232 @@
+<section id="blog" class="blog">
+    <div class="row">
+        <div class="col-md-9">
+            <div id="primary" class="row">
+                <div class="col-md-12">
+                    <!-- BEGIN ARTICLE -->
+                    <article class="post">
+                        <h1>Introduction to MongoDB indexing: How MongoDB indexes depend on memory and I/O operations
+                        </h1>
+                        <div class="post-meta">
+                            <span class="author">Centaurea</span>
+                            <span class="dates">18 December 2014</span>
+                        </div>
+                        <div class="post-content">
+                            <p>Mongodb designed to provide perfect read operations performance and oriented for read
+                                access as much as it possible.  And main source to achieve this results is indexing.
+                                So when you query any data or making any aggregation mongodb try to utilize indexes as
+                                much as it possible, nevermind is it a simple queries or complex aggregation pipelines
+                                (that’s why proper compound indexes could massively improve aggregation queries).</p>
+                            <p>
+                                Let’s assume the following:
+                            </p>
+                            <p>
+                                <ol class="list">
+                                    <li>We have a collections of posts with <strong>id, date, content</strong>
+                                        <pre>
+{
+    "id": …,
+    "date": …,
+    "content": …
+}</pre></li>
+                                    <li>At the moment X we have only initial index based on <strong>"id"</strong>.</li>
+                                    <li>Also let’s think that our collection is <strong>10 GB</strong> and it's run on <strong>2 GB RAM</strong> server.</li>
+                                </ol>
+                            </p>
+                            <h3>Queries based on not-indexed fields</h3>
+                            <p>
+                                In that case every request which based on “date” or “content”, e.g.</p>
+                                <pre>db.Post.find({"date": {"$gt": "X"}})</pre>
+                            <p>will allow Mongo to match through <strong>every</strong> document in
+                                collection, checking is it satisfy requirements or not. As we have 10 GB of data and
+                                only 2 GB of RAM Mongo will load 2 GB of data, check it, then swap on disk, load new
+                                memory mapped file with next 2 GB of data, than check it again, then swap, load, etc
+                                until it will check all of data. I hope you catch the workflow pretty well.
+                            </p>
+                            <p>
+                                Checking data itself is quite fast operation, but memory swapping – it’s slow and time expensive.
+                                Also in this scenario you could see a lot of I/O operation (reading from disk and swapping to disk).
+                                So this case is <strong>slow</strong> and I/O <strong>intensive</strong> – that’s clear.
+                            </p>
+
+                            <h3>Index-based fields queries</h3>
+
+                            <p>Let’s index all document based on <strong>"date"</strong>. Now we have additional "date" field based index.
+                                Just for example, we suggest that it’s size is 200 MB</p>
+                            <p>
+                                Let execute "date" field based request, e.g.
+                            </p>
+                                <pre>db.Post.find({"date": {"$gt": "X"}})</pre>
+                            <p>What will do Mongo in this case?
+                                <ol class="list">
+                                    <li>Check if "date" is indexed field</li>
+                                    <li>Find proper index</li>
+                                    <li>Load it into memory</li>
+                                    <li>Make all matching procedure only based on index (already loaded in memory,
+                                    no additional disk operations), and then just return document satisfied requirements.
+                                    </li>
+                                </ol>
+                            </p>
+                            <p>
+                                At the second hit of  queries like
+                            </p>
+                            <pre>db.Post.find({"date":{"$gt": "X"}})</pre>
+                            <p>it will work even faster, because date index already in memory, so no need to load it again.
+                            </p>
+                            <p>Now you see that with the same server configuration and the same data we have <strong>fast</strong>
+                                performance and <strong>few</strong> I/O operations.
+                            </p>
+
+                            <p>So the short answer for RAM vs. I/O dilemma is the following:</p>
+                            <p><strong>If you have proper indexes
+                                and have enough memory to load your indexes in memory – your system will be
+                                very fast and will take few I/O operation.</strong></p>
+
+                            <h3>Move back to the real world</h3>
+                            <p>But we have more complex problems in real life. Except of simple queries we have compound
+                                queries like</p>
+                                <pre>db.Post.find({"date": {"$gt": "X"}, "content": "MongoDB rock!" })</pre>
+                            <p>And even if we have indexes for the most of fields you query for it does not solve the problem
+                                of compound queries. In this case in order to avoid I/O operations you need compound indexes, e.g.</p>
+                                <pre>{"date": 1, "content": 1}</pre>
+                            <p>So let’s get back to our example and suggest the following:
+                                <ol class="list">
+                                    <li>Add index for <strong>"content"</strong> and compound index <strong>{"date": 1,"content": 1}</strong>.</li>
+                                    <li>The size of "content" index is <strong>4 GB</strong> for example</li>
+                                    <li>The size of compound index is <strong>4.5 GB</strong></li>
+                                </ol>
+                            </p>
+                            <p>Let’s see how it works now.</p>
+                            <p>In the previous example we query db.Post.find({"date": {"$gt": "X"}}).
+                                Ok we know what is going on. It loads data, look through index, etc. Let’s check now
+                                what happen for  query: </p>
+                                <pre>db.Post.find({"date": {"$gt": "X"}, "content": "MongoDB rock!"})</pre>
+                            <p>
+                                <ol class="list">
+                                    <li>So ok, this operation needs "date" and "content" field then we are looking for corresponding index</li>
+                                    <li>The index is found but it’s size 4.5 GB. We have only 1.8 GB of RAM (200 MB already spend for "date" index).</li>
+                                    <li>We load 40% of index, check it, then swap to disk, load 2nd 40% of index, check it, swap, load check and we done.</li>
+                                </ol>
+                            </p>
+                            <p>
+                                So right now we have "date" index in memory, and last  nearly last 30% of compound index.
+                                And we already able to see some increasing of I/O operations. So then we hit queries 
+                                like db.Post.find({ "content": "MongoDB rock!" }). We need "content" index for that, but we
+                                have 0 free memory, so we starting with swapping previously loaded indexes, then load 
+                                "content" index, check it and returning results.  <strong>So this case allow us to see that
+                                different indexes are competing for memory</strong>. And it’s getting worse with increasing
+                                numbers of indexes and collections. So <strong>more collections  => more indexes => more
+                                competition for resources => more disks I/O => slower system</strong>.
+                            </p>
+                            <p>Except all mentioned above you should not forget about memory fragmentation.
+                                If you constantly load many differently sized files in RAM it will be fragmented with time,
+                                and you could see that you have 1 GB of free RAM, but MongoDB can’t use it, because it’s just
+                                spread in all address space with smaller 20-30MB chunks, but Mongo need 500MB in single chunk.
+                            </p>
+                            <h3>Conclusion</h3>
+                            <p>Taking into account all these cases I prepared some recommendation how to improve MonogDB
+                                performance if you hesitating with RAM vs. I/O dilemma:
+                            </p>
+                            <p>
+                                <ol class="list">
+                                    <li><p><strong>From the hardware point.</strong> Both RAM and I/O increasing will cause positive effect
+                                        on system but it difficult to say what will get better increasing – I/O or RAM.
+                                        It very depends on MongoDB usage pattern. But if have a chance to choosing between
+                                        a couple more Gigabytes of RAM and SSD – SSD will be more effective in most of the cases.</p></li>
+                                    <li><p><strong>Multiple servers</strong>. In the question of  spreading data across multiple servers it
+                                        will be better to have small and middle sized collection on the same server
+                                        (not sharded across multiple servers), and only big collections sharded between multiple nodes.
+                                        It reduces indexes per server number and will reduce resources completion between servers.</p></li>
+                                    <li><p>Better to have <strong>nothing except MongoDB on the database server</strong> to avoid additional concurrency for resources.
+                                        Verify <strong>index model</strong> and make sure that it covers the most frequently used cases.</p></li>
+                                </ol>
+                            </p>
+                            <p><a href="/">Centaurea's</a> team has a great experience with MongoDB and we are ready to offer you
+                                a range of concerning services: MongoDB <a href="services/software-development">development</a>, <a href="/services/it-consulting">consulting</a>,
+                                <a href="/services">MongoDB as a service</a>. You can rely on our MongoDB experts and trust your data them!
+                            </p>
+                        </div>
+                    </article>
+                    <!-- END ARTICLE -->
+                </div>
+                <!-- BLOG AUTHOR -->
+                <div class="col-md-12">
+                    <div class="blog-author">
+                        <h3>Blog Author</h3>
+                        <div class="media">
+                            <figure class="pull-left">
+                                <img class="media-object" src="/public/images/flower_on_bg_medium.png" alt="Author">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="/">Centaurea</a>
+                                </h4>
+                                <p>
+                                    Software development and consulting company that
+                                    focused on high-load, scalable and Big Data processing systems and  offers wide
+                                    range of services. <a href="/#contact">Contact us</a> if you need any help.
+                                    <br>
+                                    <br>
+                                    Follow us in social networks:
+                                    <br>
+                                    <a href="https://www.facebook.com/pages/Centaurea/418710821619782" class="zocial icon facebook">Facebook</a>
+                                    <a href="http://plus.google.com/109684722430495144544" class="zocial icon googleplus">Google+</a>
+                                    <a href="https://twitter.com/centaurea_io" class="zocial icon twitter">Twitter</a>
+                                    <a href="https://www.linkedin.com/company/centaurea-software" class="zocial icon linkedin">LinkedIn</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 widgetbar">
+            <!-- /widget -->
+
+            <div class="row widget">
+                <div class="col-md-12">
+                    <div class="categories-widget">
+                        <h3 class="widget-title">
+                            Categories
+                        </h3>
+                        <ul>
+                            <li>
+                                MongoDB
+                            </li>
+                            <li>
+                                Database indexing
+                            </li>
+                            <li>
+                                NoSQL databases
+                            </li>
+                            <li>
+                                Database optimization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /widget -->
+
+            <div class="row widget">
+                <div class="col-md-12">
+                    <div class="popular-post-widget">
+                        <h3 class="widget-title">
+                            Other Post
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">Plunker hypanthial unagricultura</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Unstaffed intertransformability</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /widget -->
+            <!-- /widget -->
+            <!-- /widget -->
+        </div>
+    </div>
+</section>
