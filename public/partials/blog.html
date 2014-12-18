@@ -6,9 +6,7 @@
                 <div class="col-md-12">
                     <!-- BEGIN ARTICLE -->
                     <article class="post">
-                        <p>
                         <h1><a class="inverted" href="/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations">Introduction to MongoDB indexing: How MongoDB indexes depend on memory and I/O operations</a></h1>
-                        </p>
                         <div class="post-meta">
                             <span class="author">Centaurea</span>
                             <span class="dates">18 December 2014</span>
@@ -19,16 +17,13 @@
                                 So when you query any data or making any aggregation mongodb try to utilize indexes as
                                 much as it possible, nevermind is it a simple queries or complex aggregation pipelines
                                 (that’s why proper compound indexes could massively improve aggregation queries) <a href="/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations">[...]</a> </p>
-                            <br/>
                             <a class="btn btn-dark medium" href="/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations">Read More</a>
                         </div>
                     </article>
                     <!-- END ARTICLE -->
                     <!-- BEGIN ARTICLE -->
                     <article class="post">
-                        <p>
                         <h1><a class="inverted" href="/blog?name=mongodb-memory-allocation-and-cache-management">Introduction to MongoDB memory allocation and cache management</a></h1>
-                        </p>
                         <div class="post-meta">
                             <span class="author">Centaurea</span>
                             <span class="dates">18 December 2014</span>
@@ -36,7 +31,7 @@
                         <div class="post-content">
                             <p>MongoDB uses memory mapped files for file management, so in this component it relies a
                             lot on OS side. But let’s look at it based on linux OS. MongoDB maps files into memory
-                            using standard <i>mmap</i> call from <i>glibc</i>
+                            using standard <i>mmap</i> call from <i>glibc</i>.
                             <p>How it works.
                                 On start, MongoDB maps all its data storage files into memory. RAM is not used at all,
                                 this process only reserves the address space. This is reflected as virtual memory usage
@@ -44,7 +39,6 @@
                                 (Memory Virt). Basically they reflect the data + indexes size. Res/RSS memory usage
                                 doesn't reflect anything relevant at all
                                 <a href="/blog?name=mongodb-memory-allocation-and-cache-management">[...]</a> </p>
-                            <br/>
                             <a class="btn btn-dark medium" href="/blog?name=mongodb-memory-allocation-and-cache-management">Read More</a>
                         </div>
                     </article>

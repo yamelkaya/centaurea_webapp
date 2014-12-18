@@ -248,9 +248,12 @@ a.inverted:hover{
 }
 blockquote {
     margin-left: 20px;
+    padding: 5px 20px;
 }
 blockquote p {
     margin-bottom: 10px !important;
+    font-size: smaller;
+    font-style: italic;
 }
 code {
     display: block;
@@ -1117,7 +1120,6 @@ h4.clients,h2.clients,h3.clients{
 /* ====== BLOG PAGES ====== */
 #container section.blog {
     padding-top: 60px;
-    padding-bottom: 60px;
 }
 #primary {
     padding-right: 20px;
@@ -1182,8 +1184,8 @@ article.post:first-child{
 
 .post {
     position: relative;
-    margin-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 30px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #3b444a;
 }
 .post:first-child {
@@ -1221,6 +1223,7 @@ article.post:first-child{
 }
 .post .post-meta {
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 .post .post-meta span {
     color: #FFF;
@@ -1334,8 +1337,8 @@ article.post:first-child{
 }
 /* BLOG AUTHOR */
 .blog-author {
-    margin: 40px 0;
-    padding: 0 20px 40px 20px;
+    margin: 0px 0;
+    padding: 40px 20px 0px 20px;
     border: 1px solid #3b444a;
     position: relative;
     background: rgba(0, 0, 0, .06);
@@ -1416,7 +1419,6 @@ article.post:first-child{
 /* ====== WIDGET ====== */
 .widgetbar .widget {
     margin-bottom: 30px;
-    margin-left: 15px !important;
 }
 .widgetbar .widget ul {
     padding-left: 0;
