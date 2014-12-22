@@ -1516,7 +1516,7 @@ article.post:first-child{
     border-right: 0;
 }
 .dpSmall #sidebar, .dpXsmall #sidebar {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: auto;
     z-index: 99999;

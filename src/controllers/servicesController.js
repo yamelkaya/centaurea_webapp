@@ -9,7 +9,7 @@ ServicesController.prototype = {
         return this._loadPageAndCompile(
             {
                 pagePath: './public/partials/services/development.html',
-                pageTitle: 'Software Design, Software Development',
+                pageTitle: 'Software Design, Software Development - MongoDB, NoSql Databases, Hadoop, Apache Kafka, Dynamics CRM, Angular',
                 pageDescription: 'Centaureа team is dealing with systems of different levels and complexity for clients from lifestyle businesses ' +
                 'and start-ups to the enterprise level companies and global market leaders.',
                 pageKeywords: 'software development, application development, solution development'
@@ -20,7 +20,7 @@ ServicesController.prototype = {
         return this._loadPageAndCompile(
             {
                 pagePath: './public/partials/services/consulting.html',
-                pageTitle: 'Database Consulting, Big Data Consulting, Cloud Consulting, Technology Consulting',
+                pageTitle: 'Database Consulting, Big Data Consulting, Cloud Consulting, Technology Consulting, MongoDB Consulting, Dynamics CRM Consulting',
                 pageDescription: 'Centaurea is ready to share and help you in making use of different technologies and' +
                 ' building agile and scalable systems.',
                 pageKeywords: 'database consulting, big data consulting, cloud consulting, centaurea consulting, centaurea consulting services, ' +
@@ -43,7 +43,7 @@ ServicesController.prototype = {
         return this._loadPageAndCompile(
             {
                 pagePath: './public/partials/services/cto-as-a-service.html',
-                pageTitle: 'Virtual CTO, CTO Services',
+                pageTitle: 'Virtual CTO, CTO Services, CTO as a service',
                 pageDescription: 'Centaurea is ready to offer you the best specialists fo the role of virtual CTO or VP of development.',
                 pageKeywords: 'CTO as a service, virtual CTO, virtual VP of development, CTO services'
             },this._masterPath);
@@ -64,7 +64,7 @@ ServicesController.prototype = {
         return this._loadPageAndCompile(
             {
                 pagePath: './public/partials/services/managed-services.html',
-                pageTitle: 'Managed Services',
+                pageTitle: 'Database, Application and Infrastructure, Managed Services',
                 pageDescription: 'Stable infrastructure and safeness of data is an essential requirement for any business. Protect your data and keep your system healthy and well performed with our help.',
                 pageKeywords: 'managed services'
             },this._masterPath);
