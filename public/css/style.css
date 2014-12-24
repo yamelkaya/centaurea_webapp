@@ -8,6 +8,12 @@
     [ TYPHOGRAPY ]
 */
 
+.social-icons-panel{
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
 /*ERROR PAGE*/
 #container section.error-page{
     text-align: center;

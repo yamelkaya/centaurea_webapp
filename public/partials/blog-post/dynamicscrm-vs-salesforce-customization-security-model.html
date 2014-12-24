@@ -1,0 +1,212 @@
+<p>You can find over the web a lot of articles or user reviews with comparing Dynamics CRM and Salesforce. But usually
+    they do not cover (or do it a few words) the question of customizing this systems. This option is “invisible” for
+    regular CRM users but might be extremуly meaningful when you make a decision what CRM system your are going to use.
+    So, lets dive deep in details to see which abilities provide both systems, discover their strengths and weaknesses.
+</p>
+<p>
+    I am going to include into the comparison list of questions below and will try to provide general description for
+    them:
+</p>
+<p>
+<ol class="list">
+    <li>Security model</li>
+    <li>Customization</li>
+    <li>Data import and export</li>
+    <li>Dashboards and Reports</li>
+    <li>Integration with services</li>
+</ol>
+</p>
+<h3>
+    Security model
+</h3>
+<p>
+    First of all I describe entities I am going to operate with (please note that analogies I am drawing between CRM and
+    Salesforce objects not 100% but very close):
+</p>
+<p>
+<ol class="list">
+    <li>
+        <strong>User</strong> is person who can log in into CRM organization
+    </li>
+    <li><strong>Business Unit</strong>(in Dynamics CRM)/ <strong>Role</strong> (in Salesforce) corresponds to department
+        where work the person (but not always in real life). Business units and roles may be structured hierarchically.
+        Each has only one parent but may have many children. Each user can be assigned only to the one business unit.
+    </li>
+    <li><strong>Role</strong> (in Dynamics CRM)/ <strong>Profile</strong> (in Salesforce) declares privileges per entity
+        (e.g. Read privilege for Account)
+    </li>
+</ol>
+</p>
+<p>
+    Dynamics CRM and Salesforce both have multiple levels of security configuration that guarantee visibility of
+    different information:
+</p>
+<p>
+<ol class="list">
+    <li>Organization access level</li>
+    <li>Entity/Object level</li>
+    <li>Record level</li>
+    <li>Field level</li>
+</ol>
+</p>
+<p>
+    <strong>Organization level</strong> represents the access to the entire organization (login into the system).
+    Salesforce have some outh-of-the box configuration for this:
+</p>
+<p>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Dynamics CRM</th>
+        <th>Salesforce</th>
+    </tr>
+    <tr>
+        <td>Setup login hours</td>
+        <td>No*</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Setup IP ranges</td>
+        <td>No*</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            *- it may be done through plugins
+        </td>
+    </tr>
+</table>
+</p>
+<p>
+    <strong>Entity/Object access level</strong> says us what privileges to which type of entity user have (may also say
+    which parts of application user will see and some other things) and mainly speaking Roles/Profiles are responded for
+    that. But here we have two different approaches.
+</p>
+<p>
+    In the Dynamics CRM each entity has a range of standard privileges: Read, Write, Edit, Create, Assign (change the
+    owner), Share (grant privileges for record to another user) that can be granted on different levels: User, Business
+    Unit, Parent (BU and children) and Organization. E.g. for role “Sales Assistant” we can set Account visibility
+    (Read) on User level - it means that user with this role can view only his own accounts (until somebody shares with
+    him manually).
+</p>
+<p>
+    In Salesforce profiles contains which access owner have to the record operation (Create, Read, Edit, Delete, View
+    All, Modify All) across the entire organization and which access have users with this role to his and other users
+    records.
+</p>
+<p>
+    For the first look it seems that Salesforce have some limits in its security model and do not give us ability to
+    manage visibility level on business unit level but this is only for the first. Salesforce can to that with sharing
+    rules and permission sets.
+</p>
+<p>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Dynamics CRM</th>
+        <th>Salesforce</th>
+    </tr>
+    <tr>
+        <td>Assign multiple roles/profiles to user/team</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Includes out-of-the-box security roles/profiles</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Standard security roles/profiles</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Manage application parts using security roles/profiles</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Manage CRUD operations per entity</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Configure reassigns</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Share by criteria (as out-of-the-box feature)</td>
+        <td>No</td>
+        <td>Yes</td>
+    </tr>
+</table>
+</p>
+<p>
+    In Dynamics CRM you have ability to directly edit standard roles but sometimes it leads to creating invalid roles
+    (user can not do anything because some base privileges were removed). We should do it carefully. Salesforce don’t
+    have this problem.
+</p>
+<p>
+    <strong>Record level access</strong> is about giving privileges to another user for particular record. In both
+    systems this problem solved through manual sharing or managed sharing (provides developers ability to share the
+    records through system extensions)
+</p>
+<p>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Dynamics CRM</th>
+        <th>Salesforce</th>
+    </tr>
+    <tr>
+        <td>Manual sharing</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Managed sharing</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+</table>
+</p>
+<p>
+    <strong>Field level access</strong> says us about visibility of particular field in the entity. In the Dynamics CRM
+    it can be set for users or teams. In Salesforce it is configured for security profiles and I found this way more
+    natural than in Dynamics CRM (to be honest I always could not understand why we have implementation that requires
+    duplicate team for security role).
+</p>
+<p>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Dynamics CRM</th>
+        <th>Salesforce</th>
+    </tr>
+    <tr>
+        <td>Field level security</td>
+        <td>Yes (user/team based)</td>
+        <td>Yes (profile based)</td>
+    </tr>
+</table>
+</p>
+<h3>Conclusion</h3>
+<p>
+    Although both systems have similar capabilities in security configuration Salesforce makes it easier for developers
+    and system administrators . A lot of requirements that in Dynamics CRM can be achieved only with developers forces
+    in Salesforce can be done by system administrator with some clicks (e.g. sharing by criteria). It also allows to
+    avoid some mistakes during security roles/profiles configuration. So, when you have a complex system with multilevel
+    hierarchy and criteria based sharing rules Salesforce security model in many cases let you save time and
+</p>
+<blockquote>
+    <p>
+        You will achieve much better result if will concentrate more on your product and team and provide solving these problems
+        to out great specialists.
+        <a href="#/about">Centaurea's team</a> has large experience with CRM systems and we are ready to offer you
+        our services: CRM <a href="services/software-development">development</a>, <a
+            href="it-consulting">consulting</a>.
+        We are looking forward to start working with you!
+    </p>
+</blockquote>

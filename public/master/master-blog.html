@@ -4,12 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="{{pageDescription}}">
+    <meta name="keywords" content="{{pageKeywords}}">
+    <meta name='yandex-verification' content='65f41896624de7ed' />
+    <meta name="msvalidate.01" content="7D4CE3ACBA0DFEB876A43499D6A88387" />
+    <meta name="google-site-verification" content="5kdTcgq1OdAyB2HPPk9_j8f_kNN_nTPZ_1XLg5kUoCk" />
     <meta name="author" content="">
     <link rel="shortcut icon" href="/public/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/public/images/favicon/favicon.ico" type="image/x-icon">
 
-    <title>Centaurea Counsalting Company</title>
+    <title>{{pageTitle}}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/public/css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +21,9 @@
     <link href="/public/css/lib/font-awesome.css" rel="stylesheet">
     <!-- Zocial CSS -->
     <link href="/public/css/lib/zocial.css" rel="stylesheet">
+    <!--responsive slides-->
+    <link rel="stylesheet" href="/public/css/lib/responsiveslides/responsiveslides.css">
+    <link rel="stylesheet" href="/public/css/lib/responsiveslides/themes.css">
     <!-- STYLE CSS -->
     <link href="/public/css/style.css" rel="stylesheet">
     <!-- SCHEME CSS -->
@@ -30,6 +37,15 @@
 </head>
 
 <body data-spy="scroll">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-56BH8H"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-56BH8H');</script>
+<!-- End Google Tag Manager -->
 <div id="main-wrapper">
 <div id="sidebar">
     <nav class="navbar navbar-default" role="navigation">
@@ -42,22 +58,24 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-             <img src="/public/images/logo_V2.png" alt="logo garis">
+             <img src="/public/images/centaurea_logo_medium.png" alt="logo centaurea">
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a class="" href="../#home">Home</a>
+                <li><a class="" href="/#home">Home</a>
                 </li>
                 <li><a class="" href="/#services">Services</a>
                 </li>
-                <li><a class="sscroll" href="/#clients">Clients</a>
+                <li><a class="" href="/#clients">Clients</a>
                 </li>
                 <li><a class="" href="/#about">About</a>
                 </li>
                 <li><a class="" href="/#contact">Contact</a>
+                </li>
+                <li><a class="" href="/blog">Blog</a>
                 </li>
             </ul>
         </div>
@@ -65,7 +83,55 @@
     </nav>
 </div>
 <div id="container">
-    {{{partialHtml}}}
+    <section id="blog" class="blog">
+        <div class="row">
+            <div class="col-md-9">
+                <div id="primary" class="row">
+                    <div class="col-md-12">
+                        {{#blogPosts}}
+                        <!-- BEGIN ARTICLE -->
+                        <article class="post">
+                            <h1><a class="inverted" href="/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations">{{title}}</a></h1>
+                            <div class="post-meta">
+                                <span class="author">Centaurea</span>
+                                <span class="dates">{{dateString}}</span>
+                            </div>
+                            <div class="post-content">
+                                {{{previewHtml}}}
+                                <a href="/blog?name={{requestUrl}}">[...]</a> </p>
+
+                                    <a class="btn btn-dark medium" href="/blog?name={{requestUrl}}">Read More</a>
+                            </div>
+                        </article>
+                        <!-- END ARTICLE -->
+                        {{/blogPosts}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 widgetbar">
+                <!-- /widget -->
+
+                <div class="row widget">
+                    <div class="col-md-12">
+                        <div class="categories-widget">
+                            <h3 class="widget-title">
+                                Categories
+                            </h3>
+                            <ul>
+                                {{#allCategories}}
+                                <li>
+                                    {{.}}
+                                </li>
+                                {{/allCategories}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /widget -->
+
+            </div>
+        </div>
+    </section>
 <!-- BEGIN FOOTER -->
 <footer>
     <div class="row">
@@ -73,7 +139,7 @@
             <h3>
                 We create answers!
                 <span class="btn-contact">
-                    <a href="../index.html#contact">Contact us</a>
+                    <a href="/#contact">Contact us</a>
                 </span>
 
             </h3>
@@ -102,6 +168,8 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- Jquery Source -->
 <script src="/public/js/jquery-1.10.2.min.js"></script>
+<!-- Nivo Light Box Source -->
+<script src="/public/js/lib/nivo-lightbox.min.js"></script>
 <!-- Bootstrap Source -->
 <script src="/public/js/bootstrap.min.js"></script>
 <!-- Superslides Source -->
@@ -121,9 +189,9 @@
 <!-- Mobile Responsive Javascript -->
 <script src="/public/js/lib/jquery.mobileresponsive.js"></script>
 <!-- Main Action Javascript -->
-<script src="/public/js/main.js"></script>
 <!--Slider-->
 <script src="/public/js/lib/responsiveslides.min.js"></script>
+<script src="/public/js/main.js"></script>
 </body>
 
 </html>
