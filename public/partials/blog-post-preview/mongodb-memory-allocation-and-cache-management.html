@@ -3,6 +3,7 @@
     lot on OS side. But let’s look at it based on linux OS. MongoDB maps files into memory
     using standard <i>mmap</i> call from <i>glibc</i>.</p>
 <p>How it works</p>
+
 <p>
     On start, MongoDB maps all its data storage files into memory. RAM is not used at all,
     this process only reserves the address space. This is reflected as virtual memory usage
