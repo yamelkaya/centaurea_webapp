@@ -1255,8 +1255,11 @@ article.post:first-child{
     margin-bottom: 30px;
 }
 .post img.blog-img {
-    width: 80%;
+    width: 100%;
     max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 /* ribbon style */
 .ribbon-wrapper {
