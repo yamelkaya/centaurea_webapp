@@ -31,6 +31,10 @@ BlogRepository.prototype.getAllCategories = function(){
     return _.uniq(_.flatten(this.blogPosts, 'categories'));
 }
 
+BlogRepository.prototype.getPostsOrderedByDate = function(){
+    return _.sortBy(this.blogPosts,'date').reverse();
+}
+
 module.exports = {
     BlogPost: BlogPost,
     BlogRepository: BlogRepository

@@ -10,7 +10,7 @@ BlogController.prototype = {
     index: function () {
         var postName = this.requestData.queryString.name;
         if (!postName){
-            var blogPosts = data.blog.blogPosts;
+            var blogPosts = data.blog.getPostsOrderedByDate();
             var allCategories = data.blog.getAllCategories();
             return this._loadBlogAndCompile(
                 {
