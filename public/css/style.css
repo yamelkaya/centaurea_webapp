@@ -1254,6 +1254,10 @@ article.post:first-child{
 .post .post-content p {
     margin-bottom: 30px;
 }
+.post img.blog-img {
+    width: 80%;
+    max-width: 800px;
+}
 /* ribbon style */
 .ribbon-wrapper {
     position: absolute;
