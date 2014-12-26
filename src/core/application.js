@@ -6,6 +6,7 @@ var DependencyResolver = require("../infrastructure/dependencyResolver");
 var Logger = require('./../infrastructure/logger');
 var http = require('http');
 var FileServer = require('node-static').Server;
+var zlib = require('zlib');
 
 var Application = function(configPath){
 
@@ -121,8 +122,13 @@ Application.prototype = {
 
     _sendResponse: function(response){
         if(response.executionFlowResult[0] !== 'redirect-success'){
-            response.writeHead(200, {"Content-Type": "text/html"});
-            response.end(response.executionFlowResult[0]);
+            response.writeHead(200, {'Content-Type': 'text/html', 'Content-Encoding': 'gzip'});
+            zlib.gzip(response.executionFlowResult[0], function (_, result) {  // The callback will give you the
+                response.end(result);                     // result, so just send it.
+            });
+            //response.write(response.executionFlowResult[0]);
+            //
+            //response.pipe(zlib.createGzip()).pipe(response).end();
         }else{
             response.writeHead(302, {
                 'Location': '/contact/thank-you'
