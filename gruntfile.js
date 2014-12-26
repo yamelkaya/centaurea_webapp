@@ -36,16 +36,15 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    src: '../cenaturea_build/**/*.js'
+                    src: '../cenaturea_build/public/**/*.js'
                 }]
             }
         },
         cssmin: {
             build: {
                 expand: true,
-                src: ['../centaurea_build/**/*.css', '!../centaurea_build/**/*.min.css'],
-                dest: '../centaurea',
-                ext: '.min.css'
+                src: ['../centaurea_build/public/**/*.css', '!../centaurea_build/public/**/*.min.css'],
+                dest: '../centaurea'
             }
         },
         htmlmin: {
@@ -57,7 +56,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     src: [
-                        '../centaurea_build/**/*.html',
+                        '../centaurea_build/public/**/*.html',
                         '!../centaurea_build/public/partials/blog-post-preview/**/*.html',
                         '!../centaurea_build/public/master/master-blog.html'
                     ],
