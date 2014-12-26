@@ -10,7 +10,7 @@ var data = {
             'how-mongodb-indexes-depends-on-ram-and-io-operations',
             new Date(2014,11,18),
             ['MongoDB','Database indexing','NoSQL databases','Database optimization'],
-            [2,3]
+            [2]
         ),
         new BlogPost(
             2,
@@ -18,7 +18,7 @@ var data = {
             'mongodb-memory-allocation-and-cache-management',
             new Date(2014,11,18),
             ['MongoDB','Database indexing','NoSQL databases','Database optimization'],
-            [1,3]
+            [1]
         ),
         new BlogPost(
             3,
@@ -26,7 +26,15 @@ var data = {
             'dynamicscrm-vs-salesforce-customization-security-model',
             new Date(2014,11,24),
             ['Dynamics CRM', 'Salesforce', 'CRM customization', 'Security model'],
-            [1,2]
+            [4]
+        ),
+        new BlogPost(
+            4,
+            'Dynamic CRM vs. Salesforce: Customization. Part2 - UI and Business model Customization',
+            'dynamicscrm-vs-salesforce-ui-business-model-customization',
+            new Date(2014,11,26),
+            ['Dynamics CRM', 'Salesforce', 'CRM customization', 'CRM UI'],
+            [3]
         )
     ])
 };
