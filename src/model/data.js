@@ -30,7 +30,7 @@ var data = {
         ),
         new BlogPost(
             4,
-            'Dynamic CRM vs. Salesforce: Customization. Part2 - UI and Business model Customization',
+            'Dynamic CRM vs. Salesforce: Customization. Part2 - UI and business model customization',
             'dynamicscrm-vs-salesforce-ui-business-model-customization',
             new Date(2014,11,26),
             ['Dynamics CRM', 'Salesforce', 'CRM customization', 'CRM UI'],
