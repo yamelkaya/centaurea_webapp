@@ -1,9 +1,11 @@
 <p>
     This is a series of articles about different aspects of customization of Dynamics CRM and Salesforce. In my
     <a href="blog?name=dynamicscrm-vs-salesforce-customization-security-model">previous post</a>
-    I’ve already described security model in both systems and how it can be modified for particular busniness
-    purposes. So, today I want to say what kind of customization supports both systems concerning UI and business
-    model. I will try to pay attention to such questions as:
+    I’ve already described security model in both systems and how it can be modified for particular business
+    purposes. Both systems are very flexible and ready to cover the different types of customization starting from adding
+    new fields and ending with complex workflow configuration. I will try to describe the most frequently used
+    features briefly:
+
 </p>
 <p>
 <ol class="list">
@@ -13,47 +15,31 @@
     <li><strong>Workflows configuration</strong></li>
 </ol>
 </p>
+<p>Let’s imagine the following situation: we customize CRM system for IT company in order to show information about
+    projects. Project has a range of fields (the most common: start date, end date, status, project name, code etc.),
+    each project belongs to some company (Account) and has it’s team (project members), new project is created when
+    company wins opportunity. We also need to configure dashboard in order to show information about new projects for the last
+    month. </p>
 <h3>Business model configuration</h3>
+<p>Ok, for our example we can easily list all required business model customizations: </p>
 <p>
-    So, all CRM systems have base range of standard objects that participate in sales process and you can operate with
-    them (most common are Account, Contact, Opportunity etc.) But very often we face with the situation when in some
-    company these entities are actively used but vary from the standard and require minor or significant changes. Both
-    systems supports these kind of changes with some limitations.
+<ol class="list">
+    <li>Create new object - Project</li>
+    <li>Configure Project object: add fields and setup them</li>
+    <li>Create relationship with Account (standard object) and Team member (custom object)</li>
+    <li>Configure access to Project for different security roles.</li>
+</ol>
 </p>
 <p>
-<table>
-    <tr>
-        <th>Feature</th>
-        <th>Dynamics CRM</th>
-        <th>Salesforce</th>
-    </tr>
-    <tr>
-        <td>Rename standard objects</td>
-        <td>Yes*</td>
-        <td>Yes*</td>
-    </tr>
-    <tr>
-        <td>Rename standard fields</td>
-        <td>Yes*</td>
-        <td>Yes*</td>
-    </tr>
-    <tr>
-        <td colspan="3">*- some objects or fields can not be renamed directly (sometimes it can be done through the
-            database or custom code)
-        </td>
-    </tr>
-</table>
+    The first thing we need to do is create new object (with custom fields and relationships). Dynamics CRM and
+    Salesforce supports different types of fields (text, number, money, date etc.) For the first time I thought that
+    list which provide Dynamics CRM is big enough to satisfy all basic client needs but not exactly. In reality it is very common request from client to add multiple picklist, autonumber or rich text area and it’s a
+    pleasure to know that Salesforce supports them by default. I don’t want to say that with Dynamics CRM it is not
+    possible to do at all but it requires more efforts from you (find and reuse existing component for that or create it
+    from scratch). Of course, it is more painful especially when it is quite basic requirement.
 </p>
 <p>
-    The second thing we want to do is create new object (with custom fields and relationships). This is a base feature
-    that present in both. You can add new object, configure new fields for them, set up relationship with standard and
-    new objects. But Salesforce definitely do it better. Well, here's the deal. It is very common request from client to
-    add multiple picklist, autonumber or rich text area and it’s a pleasure to know that Salesforce supports them by
-    default. I don’t want to say that in Dynamics CRM it is not possible to do at all but it requires more efforts from
-    you (find and reuse existing component for that or create it from scratch). Of course, it is more painful especially
-    when it is quite basic requirement.
-</p>
-<p>
+
 <table>
     <tr>
         <th>Feature</th>
@@ -86,24 +72,9 @@
         <td>Yes</td>
     </tr>
     <tr>
-        <td>Many-to-many relationship</td>
-        <td>Yes</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <td>Many-to-one relationship</td>
-        <td>Yes</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <td>One-to-one</td>
-        <td>No**</td>
-        <td>No**</td>
-    </tr>
-    <tr>
         <td>Different data types</td>
-        <td>Yes***</td>
-        <td>Yes***</td>
+        <td>Yes**</td>
+        <td>Yes**</td>
     </tr>
     <tr>
         <td>Calculated/roll-up fields</td>
@@ -124,18 +95,94 @@
     <tr>
         <td colspan="3">
             * - not all out-of-the-box objects supports modification
-            <br>** - does not exist as standard relationship type but can be created based on many-to-one
-            <br>*** - list of available types for Salesforce and
+            <br>** - list of available types for Salesforce and
             Dynamics are different
         </td>
     </tr>
 </table>
 </p>
-<h3>Page layout configuration</h3>
 <p>
-    For optimal information perception very often we need to rearrange it or replace with some graphical
-    representation (e.g. person full name and contact data are important and must go higher). Below the list of
-    configuration possibilities.
+    The second thing we need is to create relationship with standard object - Account and new object - Team member.
+    There are some differences in approaches. When we create lookup field (1:N) in Dynamics we have no option to choose
+    but later we can configure relationship behavior (e.g. setup cascade delete, sharing or repartent). In Salesforce we
+    have a range of out-of-the box relationship types: external, indirect and so on. So, in this particular case I find
+    Dynamics model more flexible (it supports really a lot of options in relationship configuration) and allows deep
+    system setting. Unfortunately it is not used very often.
+</p>
+<p>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Dynamics CRM</th>
+        <th>Salesforce</th>
+    </tr>
+    <tr>
+        <td>Many-to-many relationship</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Many-to-one relationship</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>One-to-one</td>
+        <td>No*</td>
+        <td>No*</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            * - does not exist as standard relationship type but can be created based on many-to-one
+        </td>
+    </tr>
+</table>
+</p>
+<p>For now we have Project which linked with Account and Team member and the last thing we need to do is set up access.
+    You can checkout previous post to see details <a href="blog?name=dynamicscrm-vs-salesforce-customization-security-model">about security model and its configuration</a>.
+</p>
+<p>
+    CRM systems have base range of standard objects that participate in sales process (Account, Contact, Opportunity
+    etc.). Before creating a new one you have to think twice. Sometimes necessary objects already exists and can be
+    reused with minor changes (renaming objects or fields) and save you time.
+</p>
+        <p><table>
+    <tr>
+        <th>Feature</th>
+        <th>Dynamics CRM</th>
+        <th>Salesforce</th>
+    </tr>
+    <tr>
+        <td>Rename standard objects</td>
+        <td>Yes*</td>
+        <td>Yes*</td>
+    </tr>
+    <tr>
+        <td>Rename standard fields</td>
+        <td>Yes*</td>
+        <td>Yes*</td>
+    </tr>
+    <tr>
+        <td colspan="3">*- some objects or fields can not be renamed directly (sometimes it can be done through the
+            database or custom code)
+        </td>
+    </tr>
+</table></p>
+<h3>Page layout configuration</h3>
+<p>Let’s get back to our example. We already have all required objects with configured relationships and roles and now
+    we want to set up representation: create different forms for Project (one for Sales manager and one for Department
+    Coordinator).
+</p>
+<p>
+    For optimal information perception very often we need to rearrange it or replace it with some graphical
+    representation (e.g. person full name and contact data are important and must go higher). It is really difficult to
+    say whether one design or layout is better or worse than the other. It is better to ask “Which UI is more efficient
+    in solving particular problems?”. And in this question a picture paints a thousand words. You may check some demos (videos
+    with solving typical problems) in both systems and pay attention to the details that are more important for you
+    (information readability, count of clicks to perform some actions and so on).
+</p>
+<p>
+    Below the list of configuration possibilities:
 </p>
 <p>
 <table class="data-table">
@@ -186,15 +233,14 @@
     </tr>
 </table>
 </p>
-<p>
-    I haven't noticed any significant differences. You can achieve the same results in both CRMs.
-</p>
 <h3>Homepage configuration</h3>
 <p>
-    Every time when user comes to system he will see the homepage (dashboard). That’s why it is important to show him the
-    most actual information on it (e.g. his open activities, or hot opportunities). When person have a lot of
+    Every time when user comes to system he will see the homepage (dashboard). That’s why it important to show here the
+    most important information(e.g. his open activities, or hot opportunities). When person have a lot of
     responsibilities it requires multiple dashboards in order to show key indicators for each area. Dashboard is a good
-    solution for that.
+    solution for that. It allows to show different types of information: lists, charts, summaries, links to internal or
+    external resources, complex reports, html pages and frames.
+
 </p>
 <p>
 <table>
@@ -232,18 +278,23 @@
 </p>
 <h3>Workflows configuration</h3>
 <p>
-    Except of standard objects CRM systems have some workflows which covers basic scenario of work but it can be
-    extended or even disabled or replaced with developers forces. I don’t want to describe facilities which used for that
-    because this is topic for separate discussion. The only thing I’d like to add is that both systems are flexible
-    enough for implementation of workflows of different levels of complexity.
+    Except of standard objects CRM systems have some workflows with which covers basic scenario of work but it can be
+    extended or even disabled or replace with developers forces. For our example we need to configure modify out-of-the
+    box workflow and create new project (and auto fill some fields) after we won opportunity. This is really easy to do
+    in both and Dynamics CRM and
+    Salesforce supports much more: automatic sending emails based on templates, setup recurrent jobs, integration with other systems and
+    many other things. This is only a small list and I don’t want to describe features in details because this is topic for separate discussion. The only thing I’d like to add is
+    that both systems are flexible enough for implementation of workflows of different levels of complexity.
 </p>
 <h3>Conclusion</h3>
 <p>
-    So, when the question is related to UI customization I want to say that Salesforce will provide more comprehensive
-    set of out-of-the-box features for mapping your business model to CRM system. Some of positive moments about
-    Dynamics CRM is that custom developments fully based on standard stack of technologies (javascript, .NET, SSRS) and
-    it does not require learning something new (like Apex). But anyway (although Dynamics CRM team
-    do a lot in system improvement), for now Salesforce provides better experience.
+    So, although Dynamics CRM team already have done a lot of improvements and continue moving in this direction, for now
+    Salesforce provides more comprehensive set of out-of-the-box features for mapping your business model to CRM system.
+    But I want to notice some of positive moments about Dynamics CRM too. Custom developments fully based on standard
+    stack of technologies (javascript, .NET, SSRS) here and it does not require learning something new (like Apex in Salesforce). If
+    you have specialists which good with these technologies and strong CRM expert he would be able train the entire team
+    in quite short terms.
+
 </p>
 <blockquote>
     <p>
