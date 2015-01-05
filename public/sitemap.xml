@@ -52,12 +52,22 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://centaurea.io/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations</loc>
+  <loc>http://centaurea.io/blog?name=dynamicscrm-vs-salesforce-ui-business-model-customization</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://centaurea.io/blog?name=dynamicscrm-vs-salesforce-customization-security-model</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://centaurea.io/blog?name=mongodb-memory-allocation-and-cache-management</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://centaurea.io/blog?name=how-mongodb-indexes-depends-on-ram-and-io-operations</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
