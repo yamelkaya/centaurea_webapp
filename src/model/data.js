@@ -22,7 +22,7 @@ var data = {
         ),
         new BlogPost(
             3,
-            'Dynamic CRM vs. Salesforce: Customization. Part1 - Security model',
+            'Dynamics CRM vs. Salesforce: Customization. Part1 - Security model',
             'dynamicscrm-vs-salesforce-customization-security-model',
             new Date(2014,11,24),
             ['Dynamics CRM', 'Salesforce', 'CRM customization', 'Security model'],
@@ -30,7 +30,7 @@ var data = {
         ),
         new BlogPost(
             4,
-            'Dynamic CRM vs. Salesforce: Customization. Part2 - UI and business model customization',
+            'Dynamics CRM vs. Salesforce: Customization. Part2 - UI and business model customization',
             'dynamicscrm-vs-salesforce-ui-business-model-customization',
             new Date(2014,11,26),
             ['Dynamics CRM', 'Salesforce', 'CRM customization', 'CRM UI'],
@@ -39,7 +39,7 @@ var data = {
 
         new BlogPost(
             5,
-            'Dynamic CRM vs. Salesforce: Customization. Part3 - Reporting and dashboards',
+            'Dynamics CRM vs. Salesforce: Customization. Part3 - Reporting and dashboards',
             'dynamicscrm-vs-salesforce-reports-and-dashboards',
             new Date(2015,0,6),
             ['Dynamics CRM', 'Salesforce', 'CRM customization', 'Reporting', 'Dashboards'],
