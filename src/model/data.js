@@ -26,7 +26,7 @@ var data = {
             'dynamicscrm-vs-salesforce-customization-security-model',
             new Date(2014,11,24),
             ['Dynamics CRM', 'Salesforce', 'CRM customization', 'Security model'],
-            [4]
+            [4,5]
         ),
         new BlogPost(
             4,
@@ -34,7 +34,16 @@ var data = {
             'dynamicscrm-vs-salesforce-ui-business-model-customization',
             new Date(2014,11,26),
             ['Dynamics CRM', 'Salesforce', 'CRM customization', 'CRM UI'],
-            [3]
+            [3,5]
+        ),
+
+        new BlogPost(
+            5,
+            'Dynamic CRM vs. Salesforce: Customization. Part3 - Reporting and dashboards',
+            'dynamicscrm-vs-salesforce-reports-and-dashboards',
+            new Date(2015,0,6),
+            ['Dynamics CRM', 'Salesforce', 'CRM customization', 'Reporting', 'Dashboards'],
+            [3,4]
         )
     ])
 };

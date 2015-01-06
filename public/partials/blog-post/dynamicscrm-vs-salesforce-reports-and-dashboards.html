@@ -1,0 +1,110 @@
+<p>
+    In my previous posts I’ve already mentioned differences in <a
+        href="/blog?name=dynamicscrm-vs-salesforce-customization-security-model">security model</a> and <a
+        href="/blog?name=dynamicscrm-vs-salesforce-ui-business-model-customization">business model</a> configuration.
+    When we
+    deal with large CRM system we will face with huge amount of data. It is impossible to perform some kind of analysis
+    without visualization and smart data grouping. So, <strong>dashboards and reports</strong> help to solve this problem.
+</p>
+<p>
+    From the very beginning I want to split dashboards and reports purposes. In Dynamics CRM it is a little bit confusing. You can achieve with reports the same results as with
+    dashboards but you always have to think why and what user want to see in the result and, of course, who
+    the user is (top manager or sale representative).
+</p>
+<p>
+    Report is a set of records that meet a certain criteria. Although it may have different visual representation it
+    always show piece of information which has something common. Dashboard is a snapshot of key metrics. It helps to
+    gain valuable insight quickly. It must be actionable, meaningful but not overdone. Dashboards can include different
+    kind of information but their parts also combined logically.
+</p>
+<p>
+    Let’s start with reports. Salesforce provides you a set of out-of-the-box reports that can be modified or you can
+    create a new one from scratch. System has a report builder which is simple enough for work. All reports are created
+    with mouse clicks and you don’t need to write any line of code. There are 4 report formats available: tabular,
+    summary, matrix and joined (you can see more information about them <a
+        href="https://help.salesforce.com/HTViewHelpDoc?id=reports_changing_format.htm&language=en_US">here</a>). They
+    are really good and help to show
+    different kind of information (you can set up filters, grouping and so on). After creating your report you can add a
+    chart to it and build into the dashboard.
+</p>
+<p>
+    Dynamics CRM has very similar functionality. You can create a filtered view, select a chart for it, build
+    this chart into the dashboard. The nice feature that both system supports is drilling down. In designer
+    there is a few standard chart types available: Bar, Column, Pie, Line, Funnel. But as Dynamics is using the
+    <strong>.NET 3.5 chart control</strong> you have more than 20 chart types for visualization (moreover you can play with
+    color, dimension and other chart properties). You can checkout these dashboards overviews in <a
+        href="https://www.youtube.com/watch?v=RriGGfypMOM&list=PLC3591A8FE4ADBE07&index=91">Dynamics CRM</a>
+    (this is tutorial for 2011 but there is no significant changes in later version) and <a
+        href="https://www.youtube.com/watch?v=a6lCrNnotiY">Salesforce</a>.
+</p>
+<p>
+    But except options that mentioned above Dynamics CRM integrated with <strong>SSRS</strong> and it means you have a very powerful tool
+    for creating a complex analytics. With Business Intelligence for Visual Studio you can create sophisticated reports
+    that based on SQL queries or FetchXml and provides you additional flexibility. After are reports are created they
+    can be uploaded to the CRM organization and after that as well as charts can be built into the dashboards directly
+    or as set of links to them (which is usually more suitable option) and, of course, all data on reports are provided
+    with respect to security roles settings.
+</p>
+<p>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Dynamics CRM</th>
+        <th>Salesforce</th>
+    </tr>
+    <tr>
+        <td>Available chart types</td>
+        <td>25 chart types</td>
+        <td>7 chart types</td>
+    </tr>
+    <tr>
+        <td>Charts: drilling down</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Charts: filtered views</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Add chart to the dashboard</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Add chart to the object form</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Integration with SSRS</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+</table>
+</p>
+<h3>Conclusion</h3>
+<p>
+    Although Salesforce makes configuration very easy through Report Builder and provide better user experience
+    Microsoft Dynamics CRM has really great set of tools for creating reports and business analytics. Except of
+    different charts types which available in Dynamics chart designer you can use features of .NET chart control and
+    integration with SSRS. It may help you to aggregate information from a range of data sources and create reports of
+    different levels of complexity. But keep in mind that not all can be done through the system UI and very often it
+    requires additional development.
+</p>
+<blockquote>
+    <p>
+        You will achieve much better result if will concentrate more on your product and team and provide solving these
+        problems
+        to out great specialists.
+        <a href="#/about">Centaurea's team</a> has large experience with CRM systems and we are ready to offer you
+        our services: CRM <a href="services/software-development">development</a>, <a
+            href="it-consulting">consulting</a>.
+        We are looking forward to start working with you!
+    </p>
+</blockquote>
+<p>
+    <strong>P.S.</strong> We are glad to <a href="/#contact">receive a feedback</a> from you.
+    If you have noticed any mistakes in the article or have suggestions about it please let us know.
+</p>

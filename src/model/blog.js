@@ -5,7 +5,10 @@ function BlogPost(id,title,requestUrl,date,catgories,linkedPosts){
     this.title = title;
     this.requestUrl = requestUrl
     this.date = date;
-    this.dateString = date.getDate() + '.' + (date.getMonth()+1)+'.' + date.getFullYear();
+    var day = date.getDate(),
+        month = date.getMonth()+1,
+        year = date.getFullYear();
+    this.dateString = (day>9 ? day : '0'+day) + '.' + (month>9? month: '0' + month) + '.' + year;
     this.categories = catgories;
     this.linkedPosts = linkedPosts;
 }
