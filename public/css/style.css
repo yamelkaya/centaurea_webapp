@@ -105,6 +105,10 @@ ol.list{
     font-size: 16px;
 }
 
+ol.list li{
+    line-height: 28px;
+}
+
 .btn-contact a{
     background: transparent;
     color: #ffffff;
