@@ -816,6 +816,90 @@ footer .contact{
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
+.portfolio .logo{
+    background: url("/public/images/technologies/technologies_sprite2.jpg");
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: 500% 600%;
+    display: block;
+}
+
+.portfolio .logo.angular{
+    background-position: 25% 0;
+}
+
+.portfolio .logo.mongodb{
+    background-position: 50% 80%;
+}
+
+.portfolio .logo.cassandra{
+    background-position: 75% 20%;
+}
+
+.portfolio .logo.couchdb{
+    background-position: 25% 40%;
+}
+
+.portfolio .logo.dynamics{
+    background-position: 0% 100%;
+}
+
+.portfolio .logo.elasticsearch{
+    background-position: 0% 60%;
+}
+
+.portfolio .logo.hadoop{
+    background-position: 25% 60%;
+}
+
+.portfolio .logo.ruby{
+    background-position: 100% 60%;
+}
+
+.portfolio .logo.node{
+    background-position: 25% 100%;
+}
+
+.portfolio .logo.java{
+    background-position: 50% 60%;
+}
+
+.portfolio .logo.javascript{
+    background-position: 75% 60%;
+}
+
+.portfolio .logo.jquery{
+    background-position: 0% 80%;
+}
+
+
+.portfolio .logo.csharp{
+    background-position: 50% 40%;
+}
+
+.portfolio .logo.python{
+    background-position: 50% 100%;
+}
+
+.portfolio .logo.aws{
+    background-position: 50% 20%;
+}
+
+
+.portfolio .logo.azure{
+    background-position: 75% 80%;
+}
+
+.portfolio .logo.redis {
+    background-position: 100% 40%;
+}
+
+.portfolio .logo.sitecore{
+    background-position: 100% 80%;
+}
+
 /* ====== Testimonial ====== */
 .clients {
     color: #FFF;
