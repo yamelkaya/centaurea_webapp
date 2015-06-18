@@ -889,6 +889,95 @@ footer .contact{
     max-width: 180px;
 }
 
+
+/* ====== SHOW CASES ====== */
+#container section.showcases {
+}
+
+.showcases .rslides{
+    height: 500px;
+}
+
+.showcases .rslides .center{
+    top: 120px;
+    text-align: left;
+}
+
+.showcases .rslides img{
+    height: 500px;
+}
+
+.showcases .rslides .details>p{
+    display: inline-block;
+    padding: 11px 20px;
+    background: transparent;
+    text-align: center;
+}
+
+.showcases .rslides .details>p.caption{
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.showcases .rslides .details{
+    display: block;
+    text-align: center;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.51);
+    padding-top: 25px;
+}
+
+.showcases .rslides li{
+    height: 400px;
+}
+
+.showcases .rslides li>div{
+    height: inherit;
+}
+
+.showcases .rslides_container{
+    padding: 0;
+}
+
+.showcases .rslides_container .transparent-btns_nav{
+    text-indent: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    font-size: 40px;
+    opacity: 1;
+    height: 500px;
+    width: 28%;
+    padding-top: 12%;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*.showcases .rslides_container .transparent-btns_nav.prev:after{*/
+    /*content: "\F104";*/
+    /*font-family: FontAwesome;*/
+    /*position: absolute;*/
+    /*font-size: 70px;*/
+    /*top: 33.5%;*/
+    /*left: 40%;*/
+    /*font-weight: 300;*/
+/*}*/
+
+/*.showcases .rslides_container .transparent-btns_nav.next:after{*/
+    /*content: "\F105";*/
+    /*font-family: FontAwesome;*/
+    /*position: absolute;*/
+    /*font-size: 70px;*/
+    /*top: 33.5%;*/
+    /*left: 40%;*/
+    /*font-weight: 300;*/
+/*}*/
+
+.showcases .rslides_container .centered-btns_here a, .transparent-btns_here a, .large-btns_here a{
+  background: rgba(255, 255, 255, 0.8)
+}
 /* ====== About ====== */
 .about .teams {
     color: #202020;

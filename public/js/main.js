@@ -1,6 +1,20 @@
 var dp = jQuery;
 dp.noConflict();
+
 dp(document).ready(function() {
+    var mainSlides = {
+        '1': '/public/images/main-slide-images/development.jpg',
+        '2': '/public/images/main-slide-images/consulting.jpg',
+        '3': '/public/images/main-slide-images/mongo-db.jpg',
+        '4': '/public/images/main-slide-images/managed-services.jpg',
+        '5': '/public/images/main-slide-images/corporate-training.jpg',
+        '6': '/public/images/main-slide-images/dedicated-team.jpg',
+        '7': '/public/images/main-slide-images/cto-as-a-service.jpg'
+    }
+
+    var showcasesSlides = {
+        '1': '/public/images/quant5.jpg'
+    }
     //SET ACTIVE MENU ITEM
     dp('.navbar-nav li a').each(function(index, item){
            item = dp(item);
@@ -36,13 +50,39 @@ dp(document).ready(function() {
     });
 
     //dp('.slider').unslider({dots: true, speed: 1000, delay: 3000});
-    dp('#slides').responsiveSlides({
-        auto: true,
-        pager: true,
-        nav: true,
-        timeout: 8000,
-        speed: 500,
-        namespace: "transparent-btns"
+
+    dp(window).load(function() {
+        dp('#slides').responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: true,
+            timeout: 8000,
+            speed: 500,
+            namespace: "transparent-btns",
+            before: function(e){
+                if (e != 0)
+                {
+                    dp('#slides img:eq('+e+')').attr('src',mainSlides[e]);
+                }
+            }
+        });
+
+        dp('#showcases-slides').responsiveSlides({
+            auto: false,
+            pager: true,
+            nav: true,
+            timeout: 8000,
+            speed: 500,
+            prevText: '',
+            nextText: '',
+            namespace: "transparent-btns",
+            before: function(e){
+                if (e != 0)
+                {
+                    dp('#showcases-slides img:eq('+e+')').attr('src',showcasesSlides[e]);
+                }
+            }
+        });
     });
 
     //FIT VIDS
@@ -112,6 +152,8 @@ dp(document).ready(function() {
     //Bootstrap Tooltip
     dp('a[data-toggle="tooltip"]').tooltip();
 });
+
+
 dp(window).load(function() {
     dp('#loader').fadeOut(1000, "linear");
 });
