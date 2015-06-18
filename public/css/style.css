@@ -137,7 +137,7 @@ ol.list li{
     position: absolute;
     pointer-events: none;
     border-color: rgba(31, 130, 255, 0);
-    border-left-color: #1f82ff;
+    border-left-color: rgba(255, 255, 255, 0.19);
     border-width: 14px;
     margin-top: -14px;
 }
@@ -303,7 +303,7 @@ footer .contact{
     left: 0;
     font-family:'Raleway', sans-serif;
     z-index: 10;
-    border-right: 1px solid  #1f82ff;
+    border-right: 1px solid  rgba(255, 255, 255, 0.19);
 }
 #sidebar .navbar-toggle {
     margin-top: 11px;
