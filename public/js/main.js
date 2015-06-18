@@ -42,12 +42,6 @@ dp(document).ready(function() {
             scrollTop: dp(this.hash).offset().top
         }, 1200);
     });
-    //BIG SLIDE
-    dp('#home-slide').superslides({
-        animation: 'fade', // You can choose either fade or slide
-        play: 6000,
-        pagination: false
-    });
 
     //dp('.slider').unslider({dots: true, speed: 1000, delay: 3000});
 
@@ -85,10 +79,6 @@ dp(document).ready(function() {
         });
     });
 
-    //FIT VIDS
-    if (dp.fn.fitVids) {
-        dp(".fitvids").fitVids();
-    }
     //SERVICES SLIDER
     dp("#slider-services").sudoSlider({
         speed: 650,
