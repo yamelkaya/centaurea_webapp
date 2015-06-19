@@ -40,12 +40,6 @@ dp(document).ready(function() {
         updateBefore: true
     });
 
-    dp('.portfolioContainer').mixitup({
-        filterSelector: '.portfolioFilter a',
-        targetSelector: '.portfolio-item',
-        effects: ['fade', 'scale']
-    });
-
     dp("#quote-slider").sudoSlider({
         customLink: 'a.quoteLink',
         speed: 425,
@@ -111,6 +105,12 @@ dp(window).load(function() {
         namespace: "transparent-btns"
     });
 
+
+    dp('.portfolioContainer').mixitup({
+        filterSelector: '.portfolioFilter a',
+        targetSelector: '.portfolio-item',
+        effects: ['fade', 'scale']
+    });
 
     var slides = {
         '#software-dev': '/public/images/main-slide-images/development.jpg',
