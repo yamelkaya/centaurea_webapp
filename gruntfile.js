@@ -36,7 +36,7 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    src: '../cenaturea_build/public/**/*.js'
+                    src: '../centaurea_build/public/**/*.js'
                 }]
             }
         },
@@ -65,6 +65,64 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        concat: {
+            js :{
+                options: {
+                    separator: ';'
+                },
+                files: {
+                    '../centaurea_build/public/js/built.js' : [
+                        '../centaurea_build/public/js/jquery-1.10.2.min.js',
+                        '../centaurea_build/public/js/bootstrap.min.js',
+                        '../centaurea_build/public/js/lib/smoothscroll.js',
+                        '../centaurea_build/public/js/lib/jquery.sudoslider.min.js',
+                        '../centaurea_build/public/js/lib/jquery.mixitup.min.js',
+                        '../centaurea_build/public/js/lib/jquery.backtotop.js',
+                        '../centaurea_build/public/js/lib/jquery.mobileresponsive.js',
+                        '../centaurea_build/public/js/lib/jquery.mobileresponsive.js',
+                        '../centaurea_build/public/js/lib/responsiveslides.min.js',
+                        '../centaurea_build/public/js/main.js',
+                    ]
+                }
+            },
+            css: {
+                files: {
+                    '../centaurea_build/public/css/built.css': [
+                        '../centaurea_build/public/css/bootstrap.min.css',
+                        '../centaurea_build/public/css/lib/font-awesome.css',
+                        '../centaurea_build/public/css/lib/responsiveslides/responsiveslides.css',
+                        '../centaurea_build/public/css/lib/responsiveslides/themes.css',
+                    ],
+                    '../centaurea_build/public/css/style-built.css': [
+                        '../centaurea_build/public/css/style.css',
+                        '../centaurea_build/public/css/scheme/blue.css',
+                    ]
+                }
+            },
+            respond: {
+                options: {
+                    separator: ';'
+                },
+                files: {
+                    '../centaurea_build/public/js/respond-built.js' : [
+                        '../centaurea_build/public/js/html5shiv.js',
+                        '../centaurea_build/public/js/respond.min.js'
+                    ]
+                }
+            }
+        },
+        processhtml: {
+            options: {
+            },
+            dist: {
+                files: {
+                    '../centaurea_build/public/master/master.html': ['../centaurea_build/public/master/master.html'],
+                    '../centaurea_build/public/master/master-blog.html': ['../centaurea_build/public/master/master-blog.html'],
+                    '../centaurea_build/public/master/master-blog-post.html': ['../centaurea_build/public/master/master-blog-post.html'],
+                    '../centaurea_build/public/master/master-with-contact-footer.html': ['../centaurea_build/public/master/master-with-contact-footer.html']
+                }
+            }
+        },
         compress: {
             build: {
                 options: {
@@ -91,7 +149,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-processhtml');
 
-    grunt.registerTask('build',['clean','copy','uglify','cssmin','htmlmin','compress']);
+    grunt.registerTask('build',['clean','copy','concat','uglify', 'cssmin','processhtml','htmlmin','compress']);
     grunt.registerTask('default', ['build']);
 };
