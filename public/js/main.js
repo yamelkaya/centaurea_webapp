@@ -2,20 +2,6 @@ var dp = jQuery;
 dp.noConflict();
 
 dp(document).ready(function() {
-    var mainSlides = {
-        '1': '/public/images/main-slide-images/development.jpg',
-        '2': '/public/images/main-slide-images/consulting.jpg',
-        '3': '/public/images/main-slide-images/mongo-db.jpg',
-        '4': '/public/images/main-slide-images/managed-services.jpg',
-        '5': '/public/images/main-slide-images/corporate-training.jpg',
-        '6': '/public/images/main-slide-images/dedicated-team.jpg',
-        '7': '/public/images/main-slide-images/cto-as-a-service.jpg'
-    }
-
-    var showcasesSlides = {
-        '1': '/public/images/quant5.jpg'
-    }
-    //SET ACTIVE MENU ITEM
     dp('.navbar-nav li a').each(function(index, item){
            item = dp(item);
             var itemText = item.text().toLowerCase();
@@ -35,7 +21,6 @@ dp(document).ready(function() {
 
     dp('#copyright-year').html(new Date().getFullYear());
 
-    //SMOOTH SCROLL 
     dp('.sscroll').bind('click.smoothscroll', function(e) {
         e.preventDefault();
         dp('html,body').animate({
@@ -43,43 +28,6 @@ dp(document).ready(function() {
         }, 1200);
     });
 
-    //dp('.slider').unslider({dots: true, speed: 1000, delay: 3000});
-
-    dp(window).load(function() {
-        dp('#slides').responsiveSlides({
-            auto: true,
-            pager: true,
-            nav: true,
-            timeout: 8000,
-            speed: 500,
-            namespace: "transparent-btns",
-            before: function(e){
-                if (e != 0)
-                {
-                    dp('#slides img:eq('+e+')').attr('src',mainSlides[e]);
-                }
-            }
-        });
-
-        dp('#showcases-slides').responsiveSlides({
-            auto: false,
-            pager: true,
-            nav: true,
-            timeout: 8000,
-            speed: 500,
-            prevText: '',
-            nextText: '',
-            namespace: "transparent-btns",
-            before: function(e){
-                if (e != 0)
-                {
-                    dp('#showcases-slides img:eq('+e+')').attr('src',showcasesSlides[e]);
-                }
-            }
-        });
-    });
-
-    //SERVICES SLIDER
     dp("#slider-services").sudoSlider({
         speed: 650,
         auto: true,
@@ -91,13 +39,13 @@ dp(document).ready(function() {
         effect: "slide",
         updateBefore: true
     });
-    //PORTFOLIO
+
     dp('.portfolioContainer').mixitup({
         filterSelector: '.portfolioFilter a',
         targetSelector: '.portfolio-item',
         effects: ['fade', 'scale']
     });
-    //QUOTE SLIDE
+
     dp("#quote-slider").sudoSlider({
         customLink: 'a.quoteLink',
         speed: 425,
@@ -110,9 +58,9 @@ dp(document).ready(function() {
         effect: "fadeOutIn",
         updateBefore: true
     });
-    // TOOTLTIP
+
     dp("[data-toggle='tooltip']").tooltip();
-    //  Responsive layout, resizing the items   
+
     if (dp('.client-slider').length > 0) {
         dp('.client-slider').carouFredSel({
             responsive: true,
@@ -129,21 +77,60 @@ dp(document).ready(function() {
         });
     }
 
-    //BACK TO TOP
     dp("#backtotop").backToTop();
-    //CALL TO ACTION
-    /*
-    var bg_img = dp(".call-ta").attr('data-background');
-    dp(".call-ta").backstretch(bg_img);
-    */
-    //JQUERY Mobile Devices Responsive
+
     dp('body').mobileResponsive();
 
-    //Bootstrap Tooltip
     dp('a[data-toggle="tooltip"]').tooltip();
 });
 
 
 dp(window).load(function() {
-    dp('#loader').fadeOut(1000, "linear");
+    dp('#loader').fadeOut(500, "linear");
+
+    dp('#slides').responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        timeout: 8000,
+        speed: 500,
+        namespace: "transparent-btns",
+        before: function(i){
+
+        }
+    });
+
+    dp('#showcases-slides').responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        timeout: 8000,
+        speed: 500,
+        prevText: '',
+        nextText: '',
+        namespace: "transparent-btns"
+    });
+
+
+    var slides = {
+        '#software-dev': '/public/images/main-slide-images/development.jpg',
+        '#it-consult': '/public/images/main-slide-images/consulting.jpg',
+        '#mongodb': '/public/images/main-slide-images/mongo-db.jpg',
+        '#managed-services': '/public/images/main-slide-images/managed-services.jpg',
+        '#it-trainings': '/public/images/main-slide-images/corporate-training.jpg',
+        '#dedicated-team': '/public/images/main-slide-images/dedicated-team.jpg',
+        '#cto': '/public/images/main-slide-images/cto-as-a-service.jpg',
+        '#ahr': '/public/images/ahr2.jpg',
+        '#quantfolio': '/public/images/quant5.jpg'
+    }
+
+    function loadSlides (){
+        for (var imgSelector in slides){
+            dp(imgSelector).attr('src',slides[imgSelector]);
+        }
+    }
+
+    loadSlides();
 });
+
+
