@@ -2195,6 +2195,11 @@ form .form-control:focus, form textarea:focus {
     display:table-cell;
     float:none;
 }
+
+.navbar-collapse {
+    max-height: 380px;
+}
+
 @media (min-width: 768px) {
     .container-sm-height {
         display:table;
@@ -2234,6 +2239,27 @@ form .form-control:focus, form textarea:focus {
     }
     .col-lg-height {
         display:table-cell;
+        float:none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1010px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+        border-top: 1px solid #e7e7e7;;
+    }
+
+    .navbar-collapse.collapsing {
+        border-top: 1px solid #e7e7e7;;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
         float:none;
     }
 }
