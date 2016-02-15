@@ -2265,3 +2265,65 @@ form .form-control:focus, form textarea:focus {
 }
 
 
+/*COMING SOON*/
+/*ERROR PAGE*/
+#container section.coming-soon{
+    height: 100%;
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: table;
+    padding: 0 20px;
+}
+
+#container section.coming-soon > .content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#container section.coming-soon p{
+}
+
+.app-image-wrapper{
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    /*display: table;*/
+}
+
+.app-image-wrapper > span{
+    /*display: inline-block;*/
+    /*height: 100%;*/
+    /*width: 1px;*/
+}
+
+.app-image{
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+
+#container section.coming-soon > .content .details {
+    background: rgba(0, 0, 0, 0.51);
+    margin: 0 -20px;
+    padding: 40px;
+}
+
+.h0{
+    font-size: 42px;
+    margin-top: 20px;
+}
+
+.main-page-link{
+    /*background: black;*/
+    /*color: white;*/
+    /*padding: 10px;*/
+}
+
+
