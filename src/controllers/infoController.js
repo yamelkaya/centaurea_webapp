@@ -1,11 +1,12 @@
 var hogan = require('hogan');
 var fs = require('fs');
+var nodemailer = require('nodemailer');
 
-var ErrorController = function () {
+var InfoController = function () {
 };
 
-ErrorController.prototype = {
-    'productivity-coming': function () {
+InfoController.prototype = {
+    'coming-soon': function () {
         return this._loadPageAndCompile(
             {
                 pagePath: './public/partials/page-coming-soon.html',
@@ -14,6 +15,47 @@ ErrorController.prototype = {
             this._masterPath);
     },
 
+    email: function(){
+
+        var transporter = nodemailer.createTransport({
+            service: 'Gmail',
+            auth: {
+                user: 'hoboutdev@gmail.com',
+                pass: process.env.MAIL_PWD
+            }
+        });
+
+        var from = this.requestData.queryString.useremail;
+
+        var mailOptions = {
+            to: 'contact@centaurea.io',
+            subject: "app subscriber",
+            text: "email: " + from + '\n'
+        };
+
+        transporter.sendMail(mailOptions, function(error, info){
+            if(error){
+
+                process.stdout.write("Exception occurred when sending email with options: \n");
+                process.stdout.write(mailOptions + '\n');
+                process.stdout.write(error.toString() + '\n');
+
+            }else{
+                console.log('Message sent: ' + info.response + '\n');
+            }
+        });
+
+        return "redirect-thank-you";
+    },
+
+    "thank-you": function () {
+        return this._loadPageAndCompile(
+            {
+                pagePath: './public/partials/page-thanks.html',
+                pageTitle: 'Thanks for subscription!'
+            },
+            this._masterPath);
+    },
 
     _masterPath: './public/master/master-without-menu.html',
 
@@ -31,4 +73,4 @@ ErrorController.prototype = {
 
 };
 
-module.exports = ErrorController;
+module.exports = InfoController;

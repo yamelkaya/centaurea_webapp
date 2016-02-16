@@ -121,21 +121,26 @@ Application.prototype = {
     },
 
     _sendResponse: function(response){
-        if(response.executionFlowResult[0] !== 'redirect-success'){
-            response.writeHead(200, {'Content-Type': 'text/html', 'Content-Encoding': 'gzip'});
-            zlib.gzip(response.executionFlowResult[0], function (_, result) {  // The callback will give you the
-                response.end(result);                     // result, so just send it.
-            });
-            //response.write(response.executionFlowResult[0]);
-            //
-            //response.pipe(zlib.createGzip()).pipe(response).end();
-        }else{
-            response.writeHead(302, {
-                'Location': '/contact/thank-you'
-            });
-            response.end();
+        switch (response.executionFlowResult[0]){
+            case 'redirect-success':
+                response.writeHead(302, {
+                    'Location': '/contact/thank-you'
+                });
+                response.end();
+                break;
+            case 'redirect-thank-you':
+                response.writeHead(302, {
+                    'Location': '/info/thank-you'
+                });
+                response.end();
+                break;
+            default:
+                response.writeHead(200, {'Content-Type': 'text/html', 'Content-Encoding': 'gzip'});
+                zlib.gzip(response.executionFlowResult[0], function (_, result) {  // The callback will give you the
+                    response.end(result);                     // result, so just send it.
+                });
+                break;
         }
-
     }
 
 };
