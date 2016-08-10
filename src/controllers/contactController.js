@@ -30,8 +30,9 @@ ContactController.prototype = {
             if(error){
 
                 process.stdout.write("Exception occurred when sending email with options: \n");
-                process.stdout.write(mailOptions + '\n');
-                process.stdout.write(error.toString() + '\n');
+                process.stdout.write(JSON.stringify(mailOptions) + '\n');
+                process.stdout.write("Error information: \n");
+                process.stdout.write(JSON.stringify(error) + '\n');
 
             }else{
                 console.log('Message sent: ' + info.response + '\n');
