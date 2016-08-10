@@ -11,7 +11,7 @@ ContactController.prototype = {
         var transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
-                user: 'hoboutdev@gmail.com',
+                user: 'centaurea.io@gmail.com',
                 pass: process.env.MAIL_PWD
             }
         });
