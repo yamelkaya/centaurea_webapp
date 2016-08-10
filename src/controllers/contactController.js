@@ -16,6 +16,8 @@ ContactController.prototype = {
             }
         });
 
+        process.stdout.write("EPwd is : " + process.env.MAIL_PWD + '\n');
+
         var from = this.requestData.queryString.useremail;
         var subject = this.requestData.queryString.mailsubject;
         var text = this.requestData.queryString.messsagebody;
@@ -31,7 +33,7 @@ ContactController.prototype = {
 
                 process.stdout.write("Exception occurred when sending email with options: \n");
                 process.stdout.write(JSON.stringify(mailOptions) + '\n');
-                process.stdout.write("Error information: \n");
+                process.stdout.write("Error information: \n ");
                 process.stdout.write(JSON.stringify(error) + '\n');
 
             }else{
